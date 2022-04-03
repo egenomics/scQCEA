@@ -47,6 +47,4 @@ The scQCEA generates a QC report as an HTML file including four sections: experi
 
 ### Citation
 
-[scQCEA: A Framework for Annotation and Quality
-Control Report of Single-Cell RNA-Sequencing
-Data] Isar Nassiri, Benjamin Fairfax, Angela Lee, Yanxia Wu, David Buck, Paolo Piazza. 
+scQCEA: A Framework for Annotation and Quality Control Report of Single-Cell RNA-Sequencing Data. Isar Nassiri, Benjamin Fairfax, Angela Lee, Yanxia Wu, David Buck, Paolo Piazza. 
