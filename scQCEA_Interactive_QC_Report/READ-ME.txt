@@ -5,3 +5,6 @@ It is easy to create an interactive QC report for those who possess little or no
 2. Install the free version of rStudio (https://www.rstudio.com/products/rstudio/download/)
 
 3. Open the "CLICK_ME.Rmd" file inside the folder [scQCEA_Interactive_Report] using rStudio, and click on the "Knite" blue icon. The user interface of the database will come up as a new window, and create an interactive QC report in one HTML file. By default, the HTML report will be written in your working directory named CLICK_ME.html. You can open and share CLICK_ME.html without using rStudio/R.
+
+Note:
+Sample input folder is provided as the supplementry file of the aricle [scQCEA: A Framework for Annotation and Quality Control Report of Single-Cell RNA-Sequencing Data. Isar Nassiri, Benjamin Fairfax, Angela Lee, Yanxia Wu, David Buck, Paolo Piazza].
