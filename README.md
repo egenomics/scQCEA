@@ -1,4 +1,4 @@
-scRNABatchQC
+scQCEA
 ==========
 * [Introduction](#introduction)
 * [Input data](#Input)
