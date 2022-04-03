@@ -3,7 +3,7 @@ scRNABatchQC
 * [Introduction](#introduction)
 * [Input data](#Input)
 * [Cell type enrichment analysis](#CellTypeEnrichmentAnalysis)
-* [HTML report: interactive QC report](#installation)
+* [Interactive QC report](#installation)
 * [Citation](#citation)
 <a name="introduction"/>
 
