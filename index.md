@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## scQCEA
 
 You can use the [editor on GitHub](https://github.com/isarnassiri/scQCEA/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
