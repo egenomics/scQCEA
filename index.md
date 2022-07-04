@@ -85,7 +85,7 @@ All releases [LINK](https://pypi.org/project/vireoSNP/#history)
 ### Issue reports
 If you find any error or suspicious bug, we will appreciate your report. Please write them in the github issues: [LINK](https://github.com/isarnassiri/scQCEA/issues)
 
-### References:
+### References
 Aibar, S., et al. SCENIC: single-cell regulatory network inference and clustering. Nature Methods 2017;14(11):1083-1086.
 
 Fairfax, B.P., et al. Peripheral CD8+ T cell characteristics associated with durable responses to immune checkpoint blockade in patients with metastatic melanoma. Nature Medicine 2020;26(2):193-199.
