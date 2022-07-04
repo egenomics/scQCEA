@@ -1,4 +1,4 @@
-## scQCEA
+## **scQCEA**
 
 ### Introduction 
 This documentation gives an introduction and usage manual of scQCEA (A Framework for Annotation and Quality Control Report of Single-Cell RNA-Sequencing Data), for annotating and interpreting scRNA-Seq data.
