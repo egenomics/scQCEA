@@ -1,6 +1,0 @@
-setwd("/Users/isar/Downloads/scQCEA/Scripts")
-source("Generate_Interactive_QC_Report.R")#
-#
-# Generate an "Interactive QC Report"#
-Generate_Interactive_QC_Report()
-Generate_Interactive_QC_Report()
