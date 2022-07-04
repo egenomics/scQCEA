@@ -39,7 +39,7 @@ We only tested scQCEA in the R version 4.1.1 (2021-08-10) environment. You need 
 Alternatively, you can download the source codes from CRAN and install libraries using the terminal as follows:
 
 ```markdown
-Required packages in R:
+# Required packages in R:
 
 library(stringr)
 library(bsselectR)
@@ -68,7 +68,7 @@ Cell type annotation on scRNA-Seq data is a pre-step for generating interactive 
 
 **Recommended strategy for cell type enrichment analysis:**
 
-AUCell algorithm can be applied to score the activity of each reference gene set in each cell (Aibar, et al., 2017). I uses the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The cell-type enrichment analysis only takes the count matrix from CellRanger count as the variable input.
+AUCell algorithm can be applied to score the activity of each reference gene set in each cell (Aibar, et al., 2017). It uses the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The cell-type enrichment analysis only takes the count matrix from CellRanger count as the variable input.
 
 
 
@@ -95,20 +95,16 @@ Syntax highlighted code block
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/isarnassiri/scQCEA/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
 ### Quick Resources
-Latest version on GitHub https://github.com/isarnassiri/scQCEA/
+Latest version on GitHub [LINK](https://github.com/isarnassiri/scQCEA/)
 
-Scripts for simulation https://github.com/single-cell-genetics/vireo/tree/master/simulate
+Scripts for simulation [LINK](https://github.com/single-cell-genetics/vireo/tree/master/simulate)
 
-All releases https://pypi.org/project/vireoSNP/#history
+All releases [LINK](https://pypi.org/project/vireoSNP/#history)
 
 ### Issue reports
 If you find any error or suspicious bug, we will appreciate your report. Please write them in the github issues:(https://github.com/isarnassiri/scQCEA/issues)
