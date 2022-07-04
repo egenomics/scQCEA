@@ -1,8 +1,8 @@
 ## scQCEA
 
-You can use the [editor on GitHub](https://github.com/isarnassiri/scQCEA/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+scQCEA is an R package for annotation and quality control report of scRNA-Seq profiles. It generates an interactive report of quality control metrics which allows visual evaluation of QC metrics, objective selection of insightful optimal cluster numbers and discrimination between true variation and background noise.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The easiest way to generate an interactive summary QC report is run the RUN_ME.R script from the RStudio. The required inputs are a gene-cell count matrix, feature-barcode matrices, and tSNE and UMAP projections from 10X CellRanger count.
 
 ### Markdown
 
