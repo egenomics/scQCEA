@@ -10,7 +10,11 @@ The easiest way to generate an interactive summary QC report is run the RUN_ME.R
 
 ### Installation
 
-To install, run the RUN_ME.R script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories. The following versions of its dependencies are compatible with the library:
+1. Install the R (https://cran.r-project.org/)
+
+2. Install the free version of rStudio (https://www.rstudio.com/products/rstudio/download/)
+
+3. To install scQCEA, run the RUN_ME.R script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories. The following versions of its dependencies are compatible with the library:
 
 Attached packages:
 readr_2.1.0       
@@ -27,6 +31,8 @@ kableExtra_1.3.4
 R.utils_2.11.0 
 
 ### Markdown
+
+It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interative QC report on your computer please:
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
