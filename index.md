@@ -15,6 +15,7 @@ The easiest way to generate an interactive summary QC report is to run the `RUN_
 3. To install scQCEA, run the `RUN_ME.R` script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories. The following versions of its dependencies are compatible with the library:
 
 **Required version of packages in R:**
+
 ```markdown
 readr_2.1.0       
 dplyr_1.0.7        
@@ -67,7 +68,9 @@ Cell type annotation on scRNA-Seq data is a pre-step for generating interactive 
 
 **Recommended strategy for cell type enrichment analysis:**
 
-We can use AUCell algorithm to score the activity of each reference gene set in each cell (Aibar, et al., 2017). We used the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The cell-type enrichment analysis only takes the count matrix from CellRanger count as the variable input.![image](https://user-images.githubusercontent.com/27027989/177175707-ca9e21d8-6cad-4c2e-84c1-9ff7e767335e.png)
+AUCell algorithm can be applied to score the activity of each reference gene set in each cell (Aibar, et al., 2017). I uses the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The cell-type enrichment analysis only takes the count matrix from CellRanger count as the variable input.
+
+
 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
@@ -110,7 +113,9 @@ All releases https://pypi.org/project/vireoSNP/#history
 ### Issue reports
 If you find any error or suspicious bug, we will appreciate your report. Please write them in the github issues:(https://github.com/isarnassiri/scQCEA/issues)
 
-### References
-scQCEA: A Framework for Annotation and Quality Control Report of Single-Cell RNA-Sequencing Data. Isar Nassiri, Benjamin Fairfax, Angela Lee, Yanxia Wu, David Buck, Paolo Piazza.
+### References:
+Aibar, S., et al. SCENIC: single-cell regulatory network inference and clustering. Nature Methods 2017;14(11):1083-1086.
+Fairfax, B.P., et al. Peripheral CD8+ T cell characteristics associated with durable responses to immune checkpoint blockade in patients with metastatic melanoma. Nature Medicine 2020;26(2):193-199.
+Nassiri, I., Fairfax, B., Lee, A., Wu, Y., Buck, D., Piazza, P. scQCEA: A Framework for Annotation and Quality Control Report of Single-Cell RNA-Sequencing Data. 
 
 
