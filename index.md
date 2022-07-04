@@ -59,8 +59,13 @@ By default, the HTML report will be written in /Outputs directory named `CLICK_M
 ### Input data
 As input, the scQCEA package expects raw count data from 10X CellRanger or other single cell experiments, and optional arguments such as appropriate organism. The gene-cell count data has the gene as row (the gene name should be the human or mouse Ensembl gene ID) and the cell as column. You can convert a HDF5 Feature-Barcode Matrix to gene-cell count matrix using the cellranger mat2csv command provided by 10Xgenomics. The tSNE and UMAP projections are the outputs of dimensionality reduction analysis in csv format.
 
-
 ### Cell Type Enrichment analysis
+Cell type annotation on scRNA-Seq data is a pre-step for generating interactive QC report with scQCEA. This step requires some bioinformatics efforts, but there are a few good existing software to use.
+
+**Recommended strategy for cell type enrichment analysis:**
+
+We can use AUCell algorithm to score the activity of each reference gene set in each cell (Aibar, et al., 2017). We used the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The cell-type enrichment analysis only takes the count matrix from CellRanger count as the variable input.![image](https://user-images.githubusercontent.com/27027989/177175707-ca9e21d8-6cad-4c2e-84c1-9ff7e767335e.png)
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
