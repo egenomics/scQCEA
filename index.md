@@ -67,6 +67,7 @@ As input, the scQCEA package expects raw count data from 10X CellRanger or other
 Cell type annotation on scRNA-Seq data is a pre-step for generating an interactive QC report with scQCEA. This step requires some bioinformatics efforts, but there are a few good existing software to use.
 
 **Recommended strategy for cell-type enrichment analysis:**
+<br />
 AUCell algorithm can be applied to score the activity of each reference gene set in each cell (Aibar, et al., 2017). It uses the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The cell-type enrichment analysis only takes the count matrix from CellRanger count as the variable input.
 
 ### History
@@ -75,7 +76,9 @@ A completed version for all planned features.
 
 ### Quick Resources
 Latest version on GitHub [LINK](https://github.com/isarnassiri/scQCEA/)
+
 Scripts for simulation [LINK](https://github.com/single-cell-genetics/vireo/tree/master/simulate)
+
 All releases [LINK](https://pypi.org/project/vireoSNP/#history)
 
 ### Issue Reports
