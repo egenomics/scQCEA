@@ -6,7 +6,7 @@ This documentation gives an introduction and usage manual of scQCEA (A Framework
 
 scQCEA is an R package for annotation and quality control report of scRNA-Seq profiles. It generates an interactive report of quality control metrics which allows visual evaluation of QC metrics, objective selection of insightful optimal cluster numbers and discrimination between true variation and background noise.
 
-The easiest way to generate an interactive summary QC report is to run the RUN_ME.R script from the RStudio. The required inputs are a gene-cell count matrix, feature-barcode matrices, and tSNE and UMAP projections from 10X CellRanger count.
+The easiest way to generate an interactive summary QC report is to run the `RUN_ME.R` script from the RStudio. The required inputs are a gene-cell count matrix, feature-barcode matrices, and tSNE and UMAP projections from 10X CellRanger count.
 
 ### Easy Installation
 
@@ -14,7 +14,7 @@ The easiest way to generate an interactive summary QC report is to run the RUN_M
 
 2. Install the free version of rStudio (https://www.rstudio.com/products/rstudio/download/)
 
-3. To install scQCEA, run the RUN_ME.R script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories. The following versions of its dependencies are compatible with the library:
+3. To install scQCEA, run the `RUN_ME.R` script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories. The following versions of its dependencies are compatible with the library:
 
 ```markdown
 **Required packages in R:**
@@ -59,9 +59,9 @@ library(rstudioapi)
 
 ### Manual
 
-It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the "RUN_ME.R" file using rStudio, and click on the "Run" icon. An interactive QC report automatically will be generated in one HTML file. The scQCEA generates a QC report as an HTML file including four sections: experimental workflow, data processing workflow, samples information and QC metrics, data analysis and quality control.
+It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, and click on the "Run" icon. An interactive QC report automatically will be generated in one HTML file. The scQCEA generates a QC report as an HTML file including four sections: experimental workflow, data processing workflow, samples information and QC metrics, data analysis and quality control.
 
-By default, the HTML report will be written in /Outputs directory named CLICK_ME.html. You can open CLICK_ME.html without using rStudio/R. In addition, you can find a zip file in the /Outputs directory which is particularly useful to share or store the QC reports. 
+By default, the HTML report will be written in /Outputs directory named `CLICK_ME.html`. You can open `CLICK_ME.html` without using rStudio/R. In addition, you can find a zip file in the /Outputs directory which is particularly useful to share or store the QC reports. 
 
 ### Input data
 
