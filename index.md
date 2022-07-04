@@ -43,14 +43,14 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
 ### Quick Resources
-Latest version on GitHub https://github.com/single-cell-genetics/vireo
+Latest version on GitHub https://github.com/isarnassiri/scQCEA/
 
 Scripts for simulation https://github.com/single-cell-genetics/vireo/tree/master/simulate
 
 All releases https://pypi.org/project/vireoSNP/#history
 
 ### Issue reports
-If you find any error or suspicious bug, we will appreciate your report. Please write them in the github issues: [https://github.com/single-cell-genetics/vireo/issues](https://github.com/isarnassiri/scQCEA/issues)
+If you find any error or suspicious bug, we will appreciate your report. Please write them in the github issues:(https://github.com/isarnassiri/scQCEA/issues)
 
 ### References
 scQCEA: A Framework for Annotation and Quality Control Report of Single-Cell RNA-Sequencing Data. Isar Nassiri, Benjamin Fairfax, Angela Lee, Yanxia Wu, David Buck, Paolo Piazza.
