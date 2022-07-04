@@ -14,7 +14,7 @@ The easiest way to generate an interactive summary QC report is to run the `RUN_
 2. Install the free version of rStudio (https://www.rstudio.com/products/rstudio/download/)
 <br />
 3. To install scQCEA, run the `RUN_ME.R` script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories. The following versions of its dependencies are compatible with the library:
-<br />
+
 **Required version of packages in R:**
 
 ```markdown
@@ -77,8 +77,6 @@ A completed version for all planned features.
 
 ### Quick Resources
 Latest version on GitHub [LINK](https://github.com/isarnassiri/scQCEA/)
-<br />
-All releases [LINK]([https://pypi.org/project/vireoSNP](https://github.com/isarnassiri/scQCEA)/#history)
 
 ### Issue Reports
 If you find any error or suspicious bug, we will appreciate your report. Please write them in the github issues: [LINK](https://github.com/isarnassiri/scQCEA/issues)
