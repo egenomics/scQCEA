@@ -2,16 +2,16 @@
 
 ### Introduction 
 This documentation gives an introduction and usage manual of scQCEA (A Framework for Annotation and Quality Control Report of Single-Cell RNA-Sequencing Data), for annotating and interpreting scRNA-Seq data.
-
+<br />
 scQCEA is an R package for annotation and quality control report of scRNA-Seq profiles. It generates an interactive report of quality control metrics which allows visual evaluation of QC metrics, objective selection of insightful optimal cluster numbers and discrimination between true variation and background noise.
-
+<br />
 The easiest way to generate an interactive summary QC report is to run the `RUN_ME.R` script from the RStudio. The required inputs are a gene-cell count matrix, feature-barcode matrices, and tSNE and UMAP projections from 10X CellRanger count.
 
 ### Easy Installation
 1. Install the R (https://cran.r-project.org/)
-
+<br />
 2. Install the free version of rStudio (https://www.rstudio.com/products/rstudio/download/)
-
+<br />
 3. To install scQCEA, run the `RUN_ME.R` script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories. The following versions of its dependencies are compatible with the library:
 
 **Required version of packages in R:**
@@ -32,7 +32,7 @@ R.utils_2.11.0
 ```
 
 **Environment:** 
-
+<br />
 We only tested scQCEA in the R version 4.1.1 (2021-08-10) environment. You need to have root permission for this distribution, including the installation of any package.
 
 ### Install from Source Code
@@ -57,7 +57,7 @@ library(rstudioapi)
 
 ### Manual
 It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, and click on the "Run" icon. An interactive QC report automatically will be generated in one HTML file. The scQCEA generates a QC report as an HTML file including four sections: experimental workflow, data processing workflow, sample information and QC metrics, data analysis and quality control.
-
+<br />
 By default, the HTML report will be written in /Outputs directory named `CLICK_ME.html`. You can open `CLICK_ME.html` without using rStudio/R. In addition, you can find a zip file in the /Outputs directory which is particularly useful to share or store the QC reports. 
 
 ### Input Data
@@ -76,9 +76,9 @@ A completed version for all planned features.
 
 ### Quick Resources
 Latest version on GitHub [LINK](https://github.com/isarnassiri/scQCEA/)
-
+<br />
 Scripts for simulation [LINK](https://github.com/single-cell-genetics/vireo/tree/master/simulate)
-
+<br />
 All releases [LINK](https://pypi.org/project/vireoSNP/#history)
 
 ### Issue Reports
@@ -86,9 +86,9 @@ If you find any error or suspicious bug, we will appreciate your report. Please 
 
 ### References
 Aibar, S., et al. SCENIC: single-cell regulatory network inference and clustering. Nature Methods 2017;14(11):1083-1086.
-
+<br />
 Fairfax, B.P., et al. Peripheral CD8+ T cell characteristics associated with durable responses to immune checkpoint blockade in patients with metastatic melanoma. Nature Medicine 2020;26(2):193-199.
-
+<br />
 Nassiri, I., Fairfax, B., Lee, A., Wu, Y., Buck, D., Piazza, P. scQCEA: A Framework for Annotation and Quality Control Report of Single-Cell RNA-Sequencing Data. 
 
 
