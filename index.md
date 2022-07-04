@@ -55,9 +55,14 @@ library(rstudioapi)
 
 ### Manual
 
-It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the "RUN_ME.R" file using rStudio, and click on the "Run" icon. An interactive QC report automatically will be generated in one HTML file. By default, the HTML report will be written in /Outputs directory named CLICK_ME.html. You can open CLICK_ME.html without using rStudio/R. In addition, you can find a zip file in the /Outputs directory which is particularly useful to share or store the QC reports. 
+It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the "RUN_ME.R" file using rStudio, and click on the "Run" icon. An interactive QC report automatically will be generated in one HTML file. The scQCEA generates a QC report as an HTML file including four sections: experimental workflow, data processing workflow, samples information and QC metrics, data analysis and quality control.
 
-The scQCEA generates a QC report as an HTML file including four sections: experimental workflow, data processing workflow, samples information and QC metrics, data analysis and quality control.
+By default, the HTML report will be written in /Outputs directory named CLICK_ME.html. You can open CLICK_ME.html without using rStudio/R. In addition, you can find a zip file in the /Outputs directory which is particularly useful to share or store the QC reports. 
+
+
+### Example data
+
+As input, the scQCEA package expects raw count data from 10X CellRanger or other single cell experiments, and optional arguments such as appropriate organism. The gene-cell count data has the gene as row (the gene name should be the human or mouse Ensembl gene ID) and the cell as column. You can convert a HDF5 Feature-Barcode Matrix to gene-cell count matrix using the cellranger mat2csv command provided by 10Xgenomics. The tSNE and UMAP projections are the outputs of dimensionality reduction analysis in csv format.
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
