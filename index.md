@@ -40,16 +40,27 @@ We only tested scQCEA in R version 4.1.1 (2021-08-10) environment. You need to h
 Alternatively, you can download the source codes from CRAN and install libraries using the terminal as follows:"
 
 library(stringr)
+
 library(bsselectR)
+
 library(kableExtra)
+
 library(DT)
+
 library(downloadthis)
+
 library(ggplot2)
+
 library(data.table)
+
 library(dplyr)
+
 library(readr)
+
 library(rmarkdown)
+
 library(R.utils)
+
 library(rstudioapi)
 
 
