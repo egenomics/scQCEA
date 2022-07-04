@@ -68,30 +68,12 @@ Cell type annotation on scRNA-Seq data is a pre-step for generating an interacti
 
 **Recommended strategy for cell-type enrichment analysis:**
 
-AUCell algorithm can be applied to score the activity of each reference gene set in each cell (Aibar, et al., 2017). It uses the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The cell-type enrichment analysis only takes the count matrix from CellRanger count as the variable input (Source Code, Repository of reference Gene Sets).
+AUCell algorithm can be applied to score the activity of each reference gene set in each cell (Aibar, et al., 2017). It uses the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The cell-type enrichment analysis only takes the count matrix from CellRanger count as the variable input.
 
+### History
+**Release v0.1.1 (04/07/2022)**
 
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
+A completed version for all planned features.
 
 ### Quick Resources
 Latest version on GitHub [LINK](https://github.com/isarnassiri/scQCEA/)
