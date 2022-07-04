@@ -14,7 +14,7 @@ The easiest way to generate an interactive summary QC report is to run the `RUN_
 
 3. To install scQCEA, run the `RUN_ME.R` script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories. The following versions of its dependencies are compatible with the library:
 
-**Required packages in R:**
+**Required version of packages in R:**
 ```markdown
 readr_2.1.0       
 dplyr_1.0.7        
@@ -31,12 +31,15 @@ R.utils_2.11.0
 ```
 
 **Environment:** 
-e only tested scQCEA in the R version 4.1.1 (2021-08-10) environment. You need to have root permission for this distribution, including the installation of any package.
+
+We only tested scQCEA in the R version 4.1.1 (2021-08-10) environment. You need to have root permission for this distribution, including the installation of any package.
 
 ### Install from source code
 Alternatively, you can download the source codes from CRAN and install libraries using the terminal as follows:
 
 ```markdown
+Required packages in R:
+
 library(stringr)
 library(bsselectR)
 library(kableExtra)
