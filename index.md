@@ -37,7 +37,7 @@ We only tested scQCEA in R version 4.1.1 (2021-08-10) environment. You need to h
 
 ### Install from source code
 
-Alternatively, you can download the source codes from CRAN and install libraries using the terminal as follows:"
+Alternatively, you can download the source codes from CRAN and install libraries using the terminal as follows:
 
 library(stringr)
 
