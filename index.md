@@ -16,6 +16,7 @@ The easiest way to generate an interactive summary QC report is to run the RUN_M
 
 3. To install scQCEA, run the RUN_ME.R script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories. The following versions of its dependencies are compatible with the library:
 
+```markdown
 **Required packages in R:**
 
 readr_2.1.0       
@@ -30,6 +31,7 @@ rstudioapi_0.13
 rmarkdown_2.11  
 kableExtra_1.3.4
 R.utils_2.11.0 
+```
 
 **Environment:** 
 
@@ -39,6 +41,8 @@ We only tested scQCEA in the R version 4.1.1 (2021-08-10) environment. You need 
 
 Alternatively, you can download the source codes from CRAN and install libraries using the terminal as follows:
 
+
+```markdown
 library(stringr)
 library(bsselectR)
 library(kableExtra)
@@ -51,7 +55,7 @@ library(readr)
 library(rmarkdown)
 library(R.utils)
 library(rstudioapi)
-
+```
 
 ### Manual
 
@@ -64,10 +68,7 @@ By default, the HTML report will be written in /Outputs directory named CLICK_ME
 As input, the scQCEA package expects raw count data from 10X CellRanger or other single cell experiments, and optional arguments such as appropriate organism. The gene-cell count data has the gene as row (the gene name should be the human or mouse Ensembl gene ID) and the cell as column. You can convert a HDF5 Feature-Barcode Matrix to gene-cell count matrix using the cellranger mat2csv command provided by 10Xgenomics. The tSNE and UMAP projections are the outputs of dimensionality reduction analysis in csv format.
 
 
-###  Cell Type Enrichment analysis
-
-
-
+### Cell Type Enrichment analysis
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
