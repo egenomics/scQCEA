@@ -6,7 +6,7 @@ This documentation gives an introduction and usage manual of scQCEA (A Framework
 
 scQCEA is an R package for annotation and quality control report of scRNA-Seq profiles. It generates an interactive report of quality control metrics which allows visual evaluation of QC metrics, objective selection of insightful optimal cluster numbers and discrimination between true variation and background noise.
 
-The easiest way to generate an interactive summary QC report is run the RUN_ME.R script from the RStudio. The required inputs are a gene-cell count matrix, feature-barcode matrices, and tSNE and UMAP projections from 10X CellRanger count.
+The easiest way to generate an interactive summary QC report is to run the RUN_ME.R script from the RStudio. The required inputs are a gene-cell count matrix, feature-barcode matrices, and tSNE and UMAP projections from 10X CellRanger count.
 
 ### Easy Installation
 
@@ -33,7 +33,7 @@ R.utils_2.11.0
 
 **Environment:** 
 
-We only tested scQCEA in R version 4.1.1 (2021-08-10) environment. You need to have the root permission for this distribution, including installation of any package.
+We only tested scQCEA in the R version 4.1.1 (2021-08-10) environment. You need to have root permission for this distribution, including the installation of any package.
 
 ### Install from source code
 
@@ -53,11 +53,11 @@ library(R.utils)
 library(rstudioapi)
 
 
+### Manual
 
+It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the "RUN_ME.R" file using rStudio, and click on the "Run" icon. An interactive QC report automatically will be generated in one HTML file. By default, the HTML report will be written in /Outputs directory named CLICK_ME.html. You can open CLICK_ME.html without using rStudio/R. In addition, you can find a zip file in the /Outputs directory which is particularly useful to share or store the QC reports. 
 
-### Markdown
-
-It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interative QC report on your computer please:
+The scQCEA generates a QC report as an HTML file including four sections: experimental workflow, data processing workflow, samples information and QC metrics, data analysis and quality control.
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
