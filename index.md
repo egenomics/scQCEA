@@ -77,7 +77,7 @@ Cell type annotation on scRNA-Seq data is a pre-step for generating an interacti
 
 **Recommended strategy for cell-type enrichment analysis:**
 <br />
-AUCell algorithm can be applied to score the activity of each reference gene set in each cell (Aibar, et al., 2017). It uses the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The cell-type enrichment analysis only takes the count matrix from CellRanger count as the variable input.
+AUCell algorithm can be applied to score the activity of each reference gene set in each cell (Aibar, et al., 2017). It uses the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The required inputs are a gene-cell count matrix, feature-barcode matrices, and tSNE and UMAP projections from 10X CellRanger count.
 
 ### History
 **Release v0.1.1 (04/07/2022)**
