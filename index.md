@@ -12,7 +12,8 @@ The easiest way to generate an interactive summary QC report is to run the `RUN_
 <br />
 2. Install the free version of rStudio (https://www.rstudio.com/products/rstudio/download/)
 <br />
-3. Download scQCEA from GitHub [LINK](https://github.com/isarnassiri/scQCEA/)
+3. Download scQCEA from GitHub [(LINK)](https://github.com/isarnassiri/scQCEA/)
+<br />
 ![Figure 1](/Download_Github.png)
 <br />
 4. To install scQCEA, run the `RUN_ME.R` script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories. The following versions of its dependencies are compatible with the library:
@@ -78,10 +79,10 @@ AUCell algorithm can be applied to score the activity of each reference gene set
 A completed version for all planned features.
 
 ### Quick Resources
-Latest version on GitHub [LINK](https://github.com/isarnassiri/scQCEA/)
+Latest version on GitHub [(LINK)](https://github.com/isarnassiri/scQCEA/)
 
 ### Issue Reports
-If you find any error or suspicious bug, we will appreciate your report. Please write them in the github issues: [LINK](https://github.com/isarnassiri/scQCEA/issues)
+If you find any error or suspicious bug, we will appreciate your report. Please write them in the github issues: [(LINK)](https://github.com/isarnassiri/scQCEA/issues)
 
 ### References
 Aibar, S., et al. SCENIC: single-cell regulatory network inference and clustering. Nature Methods 2017;14(11):1083-1086.
