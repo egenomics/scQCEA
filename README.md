@@ -19,22 +19,29 @@ scQCEA is an R package for annotation and quality control report of scRNA-Seq pr
 3. Download scQCEA from GitHub [(LINK)](https://github.com/isarnassiri/scQCEA/), and unzip the folder
 4. To install scQCEA, run the `RUN_ME.R` script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories.
 
-### Cell Type Enrichment analysis
-Example of running CellTypeEnrichmentAnalysis function:
-
 ```{r,eval=FALSE}
 
-library(scQCEA)
-project_id='P180121'
-gex_library_id='481207_03'
-input.dir='/10X-gex/481207_03'
-backend.data.dir='/Back_End_Data'
-organism='hsapiens'
-parent.dir='~/scQCEA/inst/extdata'
-CellTypeEnrichmentAnalysis(project_id, gex_library_id, input.dir, backend.data.dir, organism, parent.dir)
+#########################################################################
+# Please execute the code in the RStudio IDE (https://www.rstudio.com/) #
+#########################################################################
+
+# Install and load R package
+new.packages <- list.of.packages[!("rstudioapi" %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, repos = "http://cran.us.r-project.org")
+library("rstudioapi") 
+setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Scripts/')); 
+
+source("Generate_Interactive_QC_Report.R")
+
+# Generate an "Interactive QC Report"
+Generate_Interactive_QC_Report()
+
+############################################################ 
+# 'Find the "Interactive QC Report" in the Outputs/ folder #
+############################################################
 ```
 
-### HTML report: interactive QC report
+### Usage
 
 It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interative QC report on your computer please:
 
