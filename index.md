@@ -82,7 +82,7 @@ A completed version for all planned features.
 Latest version on GitHub [(LINK)](https://github.com/isarnassiri/scQCEA/)
 
 ### Issue Reports
-If you find any error or suspicious bug, we will appreciate your report. Please write them in the github issues: [(LINK)](https://github.com/isarnassiri/scQCEA/issues)
+If you find any error or suspicious bug, we will appreciate your report. Please write them in the github issues [(LINK)](https://github.com/isarnassiri/scQCEA/issues)
 
 ### References
 Aibar, S., et al. SCENIC: single-cell regulatory network inference and clustering. Nature Methods 2017;14(11):1083-1086.
