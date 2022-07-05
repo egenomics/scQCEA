@@ -1,9 +1,8 @@
 scQCEA
 ==========
 * [Introduction](#introduction)
-* [Input data](#Input)
-* [Cell type enrichment analysis](#CellTypeEnrichmentAnalysis)
-* [Interactive QC report](#installation)
+* [Installation](#Installation)
+* [Usage](#Usage)
 * [Citation](#citation)
 <a name="introduction"/>
 
