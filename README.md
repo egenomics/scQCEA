@@ -15,13 +15,8 @@ scQCEA is an R package for annotation and quality control report of scRNA-Seq pr
 
 ### Installation
 1. Install the R [(LINK)](https://cran.r-project.org/)
-<br />
 2. Install the free version of rStudio [(LINK)](https://www.rstudio.com/products/rstudio/download/)
-<br />
 3. Download scQCEA from GitHub [(LINK)](https://github.com/isarnassiri/scQCEA/), and unzip the folder
-<br />
-![Figure 1](/Download_Github.png)
-<br />
 4. To install scQCEA, run the `RUN_ME.R` script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories.
 
 ### Cell Type Enrichment analysis
