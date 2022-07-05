@@ -11,12 +11,18 @@ scQCEA
 
 scQCEA is an R package for annotation and quality control report of scRNA-Seq profiles, which performs a probabilistic assignment of the reference cell types to identify clusters, before downstream analysis such as gene network inference. scQCEA provides automated cell type annotation on scRNA-seq data and identifies differential patterns in gene expression. scQCEA generates an interactive report of quality control metrics which allows visual evaluation of QC metrics, objective selection of insightful optimal cluster numbers and discrimination between true variation and background noise. Please see the [manual](https://isarnassiri.github.io/scQCEA/) for the usage of scRNABatchQC and the explanation of the HTML report.
 
-The easiest way to generate an interactive summary QC report is use the outputs of CellTypeEnrichmentAnalysis function and run the scQCEA Shiny Markdown. The required inputs are a gene-cell count matrix, feature-barcode matrices, and tSNE and UMAP projections from 10X CellRanger count.
-
 <a name="installation"/>
 
-### Input data
-As input, the scQCEA package expects raw count data from 10X CellRanger or other single cell experiments, and optional arguments such as appropriate organism. The gene-cell count data has the gene as row (the gene name should be the human or mouse Ensembl gene ID) and the cell as column. You can convert a HDF5 Feature-Barcode Matrix to gene-cell count matrix using the cellranger mat2csv command provided by 10Xgenomics. The tSNE and UMAP projections are the outputs of dimensionality reduction analysis in csv format.
+### Installation
+1. Install the R [(LINK)](https://cran.r-project.org/)
+<br />
+2. Install the free version of rStudio [(LINK)](https://www.rstudio.com/products/rstudio/download/)
+<br />
+3. Download scQCEA from GitHub [(LINK)](https://github.com/isarnassiri/scQCEA/), and unzip the folder
+<br />
+![Figure 1](/Download_Github.png)
+<br />
+4. To install scQCEA, run the `RUN_ME.R` script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories.
 
 ### Cell Type Enrichment analysis
 Example of running CellTypeEnrichmentAnalysis function:
@@ -47,4 +53,4 @@ The scQCEA generates a QC report as an HTML file including four sections: experi
 
 ### Citation
 
-scQCEA: A Framework for Annotation and Quality Control Report of Single-Cell RNA-Sequencing Data. Isar Nassiri, Benjamin Fairfax, Angela Lee, Yanxia Wu, David Buck, Paolo Piazza. 
+Isar Nassiri, Benjamin Fairfax, Angela Lee, Yanxia Wu, David Buck, Paolo Piazza. scQCEA: A Framework for Annotation and Quality Control Report of Single-Cell RNA-Sequencing Data. 
