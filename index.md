@@ -62,13 +62,12 @@ library(rstudioapi)
 ### Manual
 It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, and click on the "Run" icon. An interactive QC report automatically will be generated in one HTML file, including four sections: experimental workflow, data processing workflow, sample information and QC metrics, data analysis and quality control.
 <br />
-![Figure 2](/Sample_Report.png)
-
 By default, the HTML report will be written in /Outputs directory named `CLICK_ME.html`. You can open `CLICK_ME.html` without using rStudio/R. In addition, you can find a zip file in the /Outputs directory which is particularly useful to share or store the QC reports.
+<br />
+The content of "Data processing Workflow" autimitically is adjusted based on the type of appilication(s) and "Library Type" column in samples.metadata file.
 
 ### Input Data
 As input, the scQCEA package expects raw count data from 10X CellRanger or other single-cell experiments and optional arguments such as appropriate organism. The gene-cell count data has the gene as a row (the gene name should be the human or mouse Ensembl gene ID) and the cell as a column. You can convert an HDF5 Feature-Barcode Matrix to a gene-cell count matrix using the cellranger mat2csv command provided by 10Xgenomics. The tSNE and UMAP projections are the outputs of dimensionality reduction analysis in CSV format.
-The content of "Data processing Workflow" autimitically is adjusted based on the type of appilication(s) and "Library Type" column in samples.metadata file.
 
 ### Cell Type Enrichment Analysis
 Cell type annotation on scRNA-Seq data is a pre-step for generating an interactive QC report with scQCEA. This step requires some bioinformatics efforts, but there are a few good existing software to use.
