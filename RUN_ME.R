@@ -5,7 +5,7 @@
 # Install and load R package
 if(length(list.of.packages[!("rstudioapi" %in% installed.packages()[,"Package"])])) install.packages(list.of.packages[!("rstudioapi" %in% installed.packages()[,"Package"])], repos = "http://cran.us.r-project.org")
 library("rstudioapi")
-setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Scripts/')); 
+setwd("~/");setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Scripts/')); 
 
 source("Generate_Interactive_QC_Report.R")
 
