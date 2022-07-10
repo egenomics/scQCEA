@@ -2,7 +2,8 @@
 ```{r, include=FALSE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 
-list.of.packages <- c("dplyr", "kableExtra", "DT", "downloadthis", "ggplot2", "data.table",  "stringr", "SciencesPo", "R.utils", "readr", "rmarkdown")
+list.of.packages <- c("dplyr", "kableExtra", "DT", "downloadthis", "ggplot2", "data.table",  "stringr", "SciencesPo", "R.utils", "readr", "rmarkdown", "devtools", "DiagrammeR")
+
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, repos = "http://cran.us.r-project.org")
 
@@ -11,6 +12,8 @@ bsselectR <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Pac
 if(length(bsselectR)){devtools::install_github("walkerke/bsselectR")}
 
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(devtools)
+library(DiagrammeR)
 library(stringr)
 library(bsselectR)
 library(kableExtra)
