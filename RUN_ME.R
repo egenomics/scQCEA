@@ -3,8 +3,7 @@
 #########################################################################
 
 # Install and load R package
-new.packages <- list.of.packages[!("rstudioapi" %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages, repos = "http://cran.us.r-project.org")
+if(length(list.of.packages[!("rstudioapi" %in% installed.packages()[,"Package"])])) install.packages(list.of.packages[!("rstudioapi" %in% installed.packages()[,"Package"])], repos = "http://cran.us.r-project.org")
 library("rstudioapi")
 setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Scripts/')); 
 
