@@ -13,5 +13,5 @@ source("Generate_Interactive_QC_Report.R")
 Generate_Interactive_QC_Report()
 
 ############################################################ 
-# 'Find the "Interactive QC Report" in the Outputs/ folder #
+#  Find the "Interactive QC Report" in the Outputs/ folder #
 ############################################################
