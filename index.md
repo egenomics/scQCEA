@@ -108,7 +108,7 @@ Meta data of samples (samples.metadata)
 ![Figure 3](/meta.data.png)
 <br />
 Project Description (PInf.txt)
-![Figure 4](/PInf.png | width=5)
+![Figure 4](/PInf.png | width=10)
 <br />
 Out put of 10X CellRanger or other single-cell experiments per pipeline
 ![Figure 5](/Inputs_0.png)
