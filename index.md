@@ -106,24 +106,15 @@ As input, the scQCEA package expects the following data:
 
 <img src="meta.data.png" width="600" height="200">
 
-<details>
- <summary>Project Description (PInf.txt)</summary>
-<p> </p>
-</details>
+* Project Description (PInf.txt)
 
 <img src="PInf.png" width="400" height="75">
 
-<details>
- <summary>Out put of 10X CellRanger or other single-cell experiments per pipeline</summary>
-<p> </p>
-</details>
+* Out put of 10X CellRanger or other single-cell experiments per pipeline
 
 <img src="Inputs_0.png" width="250" height="270">
 
-<details>
-<summary>scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory:</summary>
-<p> </p>
-</details>
+* scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory
 
 <img src="Inputs_1.png" width="250" height="350">
 
