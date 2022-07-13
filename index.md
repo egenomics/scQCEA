@@ -92,26 +92,7 @@ Alternatively, you can download the source codes and install libraries using the
 ### Manual
 It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, select all scripts incluidng `GenerateInteractiveQCReport()` function, and click on the "Run" button at the top right of the Source tab.
 
-```{r,eval=FALSE}
-
-#########################################################################
-# Please execute the code in the RStudio IDE (https://www.rstudio.com/) #
-#########################################################################
-
-##### Install and load R packages #####
-if(!("rstudioapi" %in% installed.packages()[,"Package"])) install.packages("rstudioapi", repos = "http://cran.us.r-project.org"); library("rstudioapi")
-
-##### Generate an "Interactive QC Report" #####
-setwd("~/"); setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Scripts/')); 
-source("GenerateInteractiveQCReport.R")
-GenerateInteractiveQCReport()
-
-############################################################ 
-#  Find the "Interactive QC Report" in the Outputs/ folder #
-############################################################
-
-```
-
+<img src="RunME.png" width="500" height="250">
 
 An interactive QC report automatically will be generated in one HTML file, including four sections: experimental workflow, data processing workflow, sample information and QC metrics, data analysis and quality control (Fig. 2).
 
