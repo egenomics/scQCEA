@@ -18,43 +18,32 @@ The easiest way to generate an interactive summary QC report is to run the `RUN_
 **Required version of packages in R:**
 
 ```markdown
-readr_2.1.0       
-dplyr_1.0.7        
-data.table_1.14.2 
-ggplot2_3.3.5      
-downloadthis_0.2.1
-DT_0.19            
+R.utils_2.11.0    
+R.oo_1.24.0        
+R.methodsS3_1.8.1  
+readr_2.1.2        
+dplyr_1.0.9       
+data.table_1.14.2  
+ggplot2_3.3.6      
+downloadthis_0.3.1 
+DT_0.22            
+kableExtra_1.3.4  
 bsselectR_0.1.0    
-stringr_1.4.0     
+stringr_1.4.0      
+DiagrammeR_1.0.9   
+devtools_2.4.3     
+usethis_2.1.5     
+zip_2.2.0          
 rstudioapi_0.13    
-rmarkdown_2.11  
-kableExtra_1.3.4
-R.utils_2.11.0 
+rmarkdown_2.13    
 ```
 
 **Environment:** 
 <br />
-We only tested scQCEA in the R version 4.1.1 (2021-08-10) environment. You need to have root permission for this distribution, including the installation of any package.
+We only tested scQCEA in the R version 4.1.3 (2022-03-10) environment. You need to have root permission for this distribution, including the installation of any package.
 
 ### Install from Source Code
-Alternatively, you can download the source codes from CRAN and install libraries using the terminal as follows:
-
-```markdown
-# Required packages in R:
-
-library(stringr)
-library(bsselectR)
-library(kableExtra)
-library(DT)
-library(downloadthis)
-library(ggplot2)
-library(data.table)
-library(dplyr)
-library(readr)
-library(rmarkdown)
-library(R.utils)
-library(rstudioapi)
-```
+Alternatively, you can download the source codes from CRAN and install libraries using the terminal.
 
 ### Manual
 It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, and click on the "Run" icon. An interactive QC report automatically will be generated in one HTML file, including four sections: experimental workflow, data processing workflow, sample information and QC metrics, data analysis and quality control (Fig. 2).
