@@ -102,10 +102,7 @@ By default, the HTML report will be written in /Outputs directory named `CLICK_M
 ### Input Data
 As input, the scQCEA package expects the following data:
 
-<details>
- <summary>Meta data of samples (samples.metadata)</summary>
-<p> </p>
-</details>
+* Meta data of samples (samples.metadata)
 
 <img src="meta.data.png" width="600" height="200">
 
@@ -128,7 +125,7 @@ As input, the scQCEA package expects the following data:
 <p> </p>
 </details>
 
-<img src="Inputs_1.png" width="250" height="320">
+<img src="Inputs_1.png" width="250" height="350">
 
 Genomics sample report file inclduing a summary of the alignment and assignment of reads to cells and genes are present in the metrics_summary.csv.
 
