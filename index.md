@@ -134,7 +134,7 @@ Genomics sample report file inclduing a summary of the alignment and assignment 
 
 Raw count data from 10X CellRanger (/outs/read_count.csv) or other single-cell experiments has the gene as a row (the gene name should be the human or mouse Ensembl gene ID) and the cell as a column. You can convert an HDF5 Feature-Barcode Matrix to a gene-cell count matrix using the cellranger mat2csv command provided by 10Xgenomics.  
 
-The tSNE and UMAP projections are the outputs of dimensionality reduction analysis in CSV format.
+The tSNE and UMAP projections are the outputs of dimensionality reduction analysis in CSV format (projection.csv).
 
 ### Cell Type Enrichment Analysis
 Cell type annotation on scRNA-Seq data is a pre-step for generating an interactive QC report with scQCEA. This step requires some bioinformatics efforts, but there are a few good existing software to use.
