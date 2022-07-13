@@ -105,13 +105,19 @@ As input, the scQCEA package expects the following data:
 
 <br />
 Meta data of samples (samples.metadata)
+
 ![Figure 3](/meta.data.png)
+
 <br />
 Project Description (PInf.txt)
-![Figure 4](/PInf.png | width=15)
+
+<img src="/PInf.png" width="500" height="100">
+
 <br />
 Out put of 10X CellRanger or other single-cell experiments per pipeline
-![Figure 5](/Inputs_0.png)
+
+<img src="/Inputs_0.png" width="250" height="300">
+
 <br />
 scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory:
 
