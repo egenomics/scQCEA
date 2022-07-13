@@ -128,7 +128,7 @@ As input, the scQCEA package expects the following data:
 <p> </p>
 </details>
 
-<img src="Inputs_1.png" width="250" height="300">
+<img src="Inputs_1.png" width="250" height="320">
 
 Genomics sample report file inclduing a summary of the alignment and assignment of reads to cells and genes are present in the metrics_summary.csv.
 
