@@ -102,12 +102,18 @@ By default, the HTML report will be written in /Outputs directory named `CLICK_M
 
 ### Input Data
 As input, the scQCEA package expects the following data:
+
+<br />
 Meta data of samples (samples.metadata)
 ![Figure 3](/meta.data.png)
+<br />
 Project Description (PInf.txt)
-![Figure 4](/PInf.png)
-Out put of 10X CellRanger or other single-cell experiments per application
+![Figure 4](/PInf.png | width=20)
+<br />
+Out put of 10X CellRanger or other single-cell experiments per pipeline
 ![Figure 5](/Inputs_0.png)
+<br />
+scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory:
 
 genomics sample report
 Summary of the alignment and assignment of reads to cells and genes are present in the metrics_summary.csv.
