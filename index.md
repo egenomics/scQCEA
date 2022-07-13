@@ -117,13 +117,18 @@ As input, the scQCEA package expects the following data:
 
 <img src="/PInf.png" width="400" height="75">
 
-<br />
-Out put of 10X CellRanger or other single-cell experiments per pipeline
+<details>
+ <summary>Out put of 10X CellRanger or other single-cell experiments per pipeline</summary>
+<p> </p>
+</details>
 
 <img src="/Inputs_0.png" width="250" height="300">
 
-<br />
-scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory:
+<details>
+ <summary>scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory:</summary>
+<p> </p>
+</details>
+
 
 genomics sample report
 Summary of the alignment and assignment of reads to cells and genes are present in the metrics_summary.csv.
