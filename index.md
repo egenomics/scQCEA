@@ -92,7 +92,7 @@ Alternatively, you can download the source codes and install libraries using the
 ### Manual
 It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, and click on the "Run" icon. An interactive QC report automatically will be generated in one HTML file, including four sections: experimental workflow, data processing workflow, sample information and QC metrics, data analysis and quality control (Fig. 2).
 
-<img src="/Figure_1.png" width="900" height="500">
+<img src="Figure_1.png" width="900" height="500">
 
 
 Experimental workflow describes scRNA-seq transcriptome processing and sequencing platform. Data processing workflow presents an analysis pipeline to process data, including aligning reads, generating feature-barcode matrices, and other secondary analyses. Samples information and QC metrics provide tables of metadata and QC, listing a variety of metrics per application. Data analysis and quality control present projection of transcriptionally and functionally distinct clusters, highlighted by cell type group, including UMAP and t-SNE plots. Diagnostic plots provide technical features, including the distribution of non-duplicate reads with mapping quality per barcode.
@@ -108,7 +108,7 @@ As input, the scQCEA package expects the following data:
 <p> </p>
 </details>
 
-<img src="/meta.data.png" width="600" height="200">
+<img src="meta.data.png" width="600" height="200">
 
 <details>
  <summary>Project Description (PInf.txt)</summary>
@@ -122,10 +122,10 @@ As input, the scQCEA package expects the following data:
 <p> </p>
 </details>
 
-<img src="/Inputs_0.png" width="250" height="300">
+<img src="/Inputs_0.png" width="250" height="270">
 
 <details>
- <summary>scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory:</summary>
+<summary>scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory:</summary>
 <p> </p>
 </details>
 
