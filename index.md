@@ -18,6 +18,7 @@ The easiest way to generate an interactive summary QC report is to run the `RUN_
 **Required version of packages in R:**
 
 ```markdown
+
 ─ Session info ──────────────────────────────────────────────────────────────────────────────────
  setting  value
  version  R version 4.1.3 (2022-03-10)
@@ -33,58 +34,57 @@ The easiest way to generate an interactive summary QC report is to run the `RUN_
  pandoc   2.17.1.1 @ /Applications/RStudio.app/Contents/MacOS/quarto/bin/ (via rmarkdown)
 
 ─ Packages ──────────────────────────────────────────────────────────────────────────────────────
-package	version	lib source
-annotate	1.72.0	Bioconductor
-AnnotationDbi	1.56.2	Bioconductor
-AUCell	1.16.0	Bioconductor
-Biobase	2.54.0	Bioconductor
-BiocGenerics	0.40.0	Bioconductor
-BiocManager	1.30.17	CRAN
-bsselectR	0.1.0	Github
-cluster	2.1.2	CRAN
-data.table	1.14.2	CRAN
-devtools	2.4.3	CRAN
-DiagrammeR	1.0.9	CRAN
-downloadthis	0.3.1	CRAN
-dplyr	1.0.9	CRAN
-DropletUtils	1.14.2	Bioconductor
-DT	0.22	CRAN
-GenomeInfoDb	1.30.1	Bioconductor
-GenomicRanges	1.46.1	Bioconductor
-GEOquery	2.62.2	Bioconductor
-ggplot2	3.3.6	CRAN
-graph	1.72.0	Bioconductor
-GSEABase	1.56.0	Bioconductor
-IRanges	2.28.0	Bioconductor
-kableExtra	1.3.4	CRAN
-Matrix	1.4-0	CRAN
-MatrixGenerics	1.6.0	Bioconductor
-matrixStats	0.62.0	CRAN
-NMF	0.24.0	CRAN
-pdftools	3.3.0	CRAN
-pkgmaker	0.32.2	CRAN
-plotly	4.10.0	CRAN
-png	0.1-7	CRAN
-R.methodsS3	1.8.1	CRAN
-R.oo	1.24.0	CRAN
-R.utils	2.11.0	CRAN
-readr	2.1.2	CRAN
-registry	0.5-1	CRAN
-rmarkdown	2.13	CRAN
-rngtools	1.5.2	CRAN
-rstudioapi	0.13	CRAN
-S4Vectors	0.32.4	Bioconductor
-SingleCellExperiment	1.16.0	Bioconductor
-stringr	1.4.0	CRAN
-SummarizedExperiment	1.24.0	Bioconductor
-usethis	2.1.5	CRAN
-XML	3.99-0.9	CRAN
-zip	2.2.0	CRAN![image](https://user-images.githubusercontent.com/27027989/178750126-651f5ae4-bd61-4ced-a3ae-b24727ec3828.png)
+ package              * version  date (UTC) lib source
+ annotate             * 1.72.0   2021-10-26 [1] Bioconductor
+ AnnotationDbi        * 1.56.2   2021-11-09 [1] Bioconductor
+ AUCell               * 1.16.0   2021-10-26 [1] Bioconductor
+ Biobase              * 2.54.0   2021-10-26 [1] Bioconductor
+ BiocGenerics         * 0.40.0   2021-10-26 [1] Bioconductor
+ BiocManager          * 1.30.17  2022-04-22 [1] CRAN (R 4.1.2)
+ bsselectR            * 0.1.0    2022-04-18 [1] Github (walkerke/bsselectR@c196e8f)
+ cluster              * 2.1.2    2021-04-17 [1] CRAN (R 4.1.3)
+ data.table           * 1.14.2   2021-09-27 [1] CRAN (R 4.1.0)
+ devtools             * 2.4.3    2021-11-30 [1] CRAN (R 4.1.0)
+ DiagrammeR           * 1.0.9    2022-03-05 [1] CRAN (R 4.1.2)
+ downloadthis         * 0.3.1    2022-02-23 [1] CRAN (R 4.1.2)
+ dplyr                * 1.0.9    2022-04-28 [1] CRAN (R 4.1.2)
+ DropletUtils         * 1.14.2   2022-01-09 [1] Bioconductor
+ DT                   * 0.22     2022-03-28 [1] CRAN (R 4.1.2)
+ GenomeInfoDb         * 1.30.1   2022-01-30 [1] Bioconductor
+ GenomicRanges        * 1.46.1   2021-11-18 [1] Bioconductor
+ GEOquery             * 2.62.2   2022-01-11 [1] Bioconductor
+ ggplot2              * 3.3.6    2022-05-03 [1] CRAN (R 4.1.2)
+ graph                * 1.72.0   2021-10-26 [1] Bioconductor
+ GSEABase             * 1.56.0   2021-10-26 [1] Bioconductor
+ IRanges              * 2.28.0   2021-10-26 [1] Bioconductor
+ kableExtra           * 1.3.4    2021-02-20 [1] CRAN (R 4.1.0)
+ Matrix               * 1.4-0    2021-12-08 [1] CRAN (R 4.1.3)
+ MatrixGenerics       * 1.6.0    2021-10-26 [1] Bioconductor
+ matrixStats          * 0.62.0   2022-04-19 [1] CRAN (R 4.1.2)
+ NMF                  * 0.24.0   2022-03-29 [1] CRAN (R 4.1.2)
+ pdftools             * 3.3.0    2022-07-07 [1] CRAN (R 4.1.2)
+ pkgmaker             * 0.32.2   2020-10-20 [1] CRAN (R 4.1.0)
+ plotly               * 4.10.0   2021-10-09 [1] CRAN (R 4.1.0)
+ png                  * 0.1-7    2013-12-03 [1] CRAN (R 4.1.0)
+ R.methodsS3          * 1.8.1    2020-08-26 [1] CRAN (R 4.1.0)
+ R.oo                 * 1.24.0   2020-08-26 [1] CRAN (R 4.1.0)
+ R.utils              * 2.11.0   2021-09-26 [1] CRAN (R 4.1.0)
+ readr                * 2.1.2    2022-01-30 [1] CRAN (R 4.1.2)
+ registry             * 0.5-1    2019-03-05 [1] CRAN (R 4.1.0)
+ rmarkdown            * 2.13     2022-03-10 [1] CRAN (R 4.1.3)
+ rngtools             * 1.5.2    2021-09-20 [1] CRAN (R 4.1.0)
+ rstudioapi           * 0.13     2020-11-12 [1] CRAN (R 4.1.0)
+ S4Vectors            * 0.32.4   2022-03-29 [1] Bioconductor
+ SingleCellExperiment * 1.16.0   2021-10-26 [1] Bioconductor
+ stringr              * 1.4.0    2019-02-10 [1] CRAN (R 4.1.0)
+ SummarizedExperiment * 1.24.0   2021-10-26 [1] Bioconductor
+ usethis              * 2.1.5    2021-12-09 [1] CRAN (R 4.1.0)
+ XML                  * 3.99-0.9 2022-02-24 [1] CRAN (R 4.1.2)
+ zip                  * 2.2.0    2021-05-31 [1] CRAN (R 4.1.0)
 
-[1] /Library/Frameworks/R.framework/Versions/4.1/Resources/library
-
+ [1] /Library/Frameworks/R.framework/Versions/4.1/Resources/library
 ─────────────────────────────────────────────────────────────────────────────────────────────────
-   
+
 ```
 
 **Environment:** 
