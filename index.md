@@ -90,7 +90,30 @@ We only tested scQCEA in the R version 4.1.3 (2022-03-10) environment. You need 
 Alternatively, you can download the source codes and install libraries using the terminal.
 
 ### Manual
-It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, and click on the "Run" icon. An interactive QC report automatically will be generated in one HTML file, including four sections: experimental workflow, data processing workflow, sample information and QC metrics, data analysis and quality control (Fig. 2).
+It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, select all scripts incluidng GenerateInteractiveQCReport() function, and click on the Run button at the top right of the Source tab.
+
+```{r,eval=FALSE}
+
+#########################################################################
+# Please execute the code in the RStudio IDE (https://www.rstudio.com/) #
+#########################################################################
+
+##### Install and load R packages #####
+if(!("rstudioapi" %in% installed.packages()[,"Package"])) install.packages("rstudioapi", repos = "http://cran.us.r-project.org"); library("rstudioapi")
+
+##### Generate an "Interactive QC Report" #####
+setwd("~/"); setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Scripts/')); 
+source("GenerateInteractiveQCReport.R")
+GenerateInteractiveQCReport()
+
+############################################################ 
+#  Find the "Interactive QC Report" in the Outputs/ folder #
+############################################################
+
+```
+
+
+An interactive QC report automatically will be generated in one HTML file, including four sections: experimental workflow, data processing workflow, sample information and QC metrics, data analysis and quality control (Fig. 2).
 
 <img src="Figure_1.png" width="800" height="350">
 
