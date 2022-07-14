@@ -116,11 +116,11 @@ As input, the scQCEA package expects the following data:
 
 * Output of 10X CellRanger or other single-cell experiments per pipeline (e.g. gex, ATAC, feat, etc.) [Note: you need to have at least one gene expression sample (gex)]
 
-<img src="Inputs_0.png" width="200" height="250">
+<img src="Inputs_0.png" width="200" height="230">
 
 * scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory
 
-<img src="Inputs_1.png" width="250" height="350">
+<img src="Inputs_1.png" width="250" height="370">
 
 Genomics sample report file including a summary of the alignment and assignment of reads to cells and genes are present in the metrics_summary.csv.
 
