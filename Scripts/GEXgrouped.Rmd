@@ -15,7 +15,7 @@ library(ggplot2)
 In the grouped count pipeline, one sample is processed through one GEM well, resulting in one library which is sequenced across multiple flowcells. This workflow is commonly performed to increase sequencing depth. In this case, all reads can be combined in a single instance of the cellranger count pipeline. Finally, the pipelines perform secondary analyses like dimensionality reduction, clustering, and differential analysis.
 
 ```{r, echo = FALSE}
-appliation='CellRanger/6.1.1 count';
+appliation='CellRanger/7.0 count';
 
 DiagrammeR::grViz("
   digraph graph2 {

@@ -15,7 +15,7 @@ library(ggplot2)
 Cellranger count takes FASTQ files from cellranger mkfastq and performs alignment, filtering, barcode counting, and UMI counting. It uses the Chromium cellular barcodes to generate feature-barcode matrices, determine clusters, and perform gene expression analysis. In the count pipeline, one sample is processed through one GEM well and sequenced on one flowcell. In this case, generate FASTQs using cellranger mkfastq and run cellranger count as Single-Sample Analysis. Additionally, the pipelines perform secondary analyses like dimensionality reduction, clustering, and differential analysis.
 
 ```{r, echo = FALSE}
-appliation='CellRanger/6.1.1 count';
+appliation='CellRanger/7.0 count';
 
 DiagrammeR::grViz("
   digraph graph2 {
