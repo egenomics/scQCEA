@@ -114,7 +114,7 @@ As input, the scQCEA package expects the following data:
 
 <img src="PInf.png" width="400" height="75">
 
-* Output of 10X CellRanger or other single-cell experiments (e.g. ATAC, feat, etc.) per pipeline [you need to have at least one gene expression sample (gex)]
+* Output of 10X CellRanger or other single-cell experiments per pipeline (e.g. gex, ATAC, feat, etc.) [Note: you need to have at least one gene expression sample (gex)]
 
 <img src="Inputs_0.png" width="250" height="270">
 
