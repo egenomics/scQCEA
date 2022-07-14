@@ -11,7 +11,7 @@ source("GenerateInteractiveQCReport.R")
 GenerateInteractiveQCReport()
 
 ##### Cell Type Enrichment Analysis #####
-setwd("~/"); setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Scripts/'));
+setwd("~/"); setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Scripts/')); 
 source("CellTypeEnrichment.R")
 CellTypeEnrichment()
 

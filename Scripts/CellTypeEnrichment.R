@@ -181,7 +181,7 @@ CellTypeEnrichment <- function(){
       write.table(assignmentTable_dedup_ClusterNumber, paste0(output.dir, '/', project_id, '_', gex.library.id, '_', 'Celltype_assignment_toCells_PlusClusters.txt'), quote = F, row.names = F, sep = '\t')
       
       # ---------------------------------- superimpose the cell type on cell Range clusters [tSNE]
-      tSNE_Cellranger = fread(paste0(input.dir,'/outs/analysis/tsne/2_components/projection.csv'), stringsAsFactors = F)
+      tSNE_Cellranger = fread(paste0(input.dir,'/outs/analysis/tsne/gene_expression_2_components/projection.csv'), stringsAsFactors = F)
       tSNE_Cellranger = as.data.frame(tSNE_Cellranger)
       row.names(tSNE_Cellranger) = gsub('-.*', '',  tSNE_Cellranger$Barcode)
       
@@ -228,7 +228,7 @@ CellTypeEnrichment <- function(){
       dev.off()
       
       # ---------------------------------- superimpose the cell type on cell Range clusters [UMAP]
-      UMAP_Cellranger = fread(paste0(input.dir, '/outs/analysis/umap/2_components/projection.csv'), stringsAsFactors = F)
+      UMAP_Cellranger = fread(paste0(input.dir, '/outs/analysis/umap/gene_expression_2_components/projection.csv'), stringsAsFactors = F)
       
       UMAP_Cellranger = as.data.frame(UMAP_Cellranger)
       row.names(UMAP_Cellranger) = gsub('-.*', '',  UMAP_Cellranger$Barcode)
