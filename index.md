@@ -90,7 +90,7 @@ We only tested scQCEA in the R version 4.1.3 (2022-03-10) environment. You need 
 Alternatively, you can download the source codes and install libraries using the terminal.
 
 ### Manual
-It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, select all scripts incluidng `GenerateInteractiveQCReport()` function, and click on the "Run" button at the top right of the Source tab.
+It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, select all scripts including `GenerateInteractiveQCReport()` function, and click on the "Run" button at the top right of the Source tab.
 
 <img src="RunME.png" width="500" height="250">
 
@@ -100,13 +100,13 @@ An interactive QC report automatically will be generated in one HTML file, inclu
 
 Experimental workflow describes scRNA-seq transcriptome processing and sequencing platform. Data processing workflow presents an analysis pipeline to process data, including aligning reads, generating feature-barcode matrices, and other secondary analyses. Samples information and QC metrics provide tables of metadata and QC, listing a variety of metrics per application. Data analysis and quality control present projection of transcriptionally and functionally distinct clusters, highlighted by cell type group, including UMAP and t-SNE plots. Diagnostic plots provide technical features, including the distribution of non-duplicate reads with mapping quality per barcode.
 <br />
-By default, the HTML report will be written in /Outputs directory named `CLICK_ME.html`. You can open `CLICK_ME.html` without using rStudio/R. In addition, you can find a zip file in the /Outputs directory which is particularly useful to share or store the QC reports. The content of the "Data processing Workflow" section is automatically adjusted based on the type of application (s) and the "Library Type" column in "samples.metadata" file.
+By default, the HTML report will be written in the /Outputs directory named `CLICK_ME.html`. You can open `CLICK_ME.html` without using rStudio/R. In addition, you can find a zip file in the /Outputs directory which is particularly useful to share or store the QC reports. The content of the "Data processing Workflow" section is automatically adjusted based on the type of application (s) and the "Library Type" column in "samples.metadata" file.
 <br />
 
 ### Input Data
 As input, the scQCEA package expects the following data:
 
-* Meta data of samples (samples.metadata)
+* Metadata of samples (samples.metadata)
 
 <img src="meta.data.png" width="600" height="200">
 
@@ -114,7 +114,7 @@ As input, the scQCEA package expects the following data:
 
 <img src="PInf.png" width="400" height="75">
 
-* Out put of 10X CellRanger or other single-cell experiments per pipeline
+* Output of 10X CellRanger or other single-cell experiments (e.g. ATAC, feat, etc.) per pipeline [you need to have at least one gene expression sample (gex)]
 
 <img src="Inputs_0.png" width="250" height="270">
 
@@ -122,7 +122,7 @@ As input, the scQCEA package expects the following data:
 
 <img src="Inputs_1.png" width="250" height="350">
 
-Genomics sample report file inclduing a summary of the alignment and assignment of reads to cells and genes are present in the metrics_summary.csv.
+Genomics sample report file including a summary of the alignment and assignment of reads to cells and genes are present in the metrics_summary.csv.
 
 Raw count data from 10X CellRanger (/outs/read_count.csv) or other single-cell experiments has the gene as a row (the gene name should be the human or mouse Ensembl gene ID) and the cell as a column. You can convert an HDF5 Feature-Barcode Matrix to a gene-cell count matrix using the cellranger mat2csv command provided by 10Xgenomics.  
 
@@ -143,7 +143,7 @@ A completed version for all planned features.
 Latest version on GitHub [(LINK)](https://github.com/isarnassiri/scQCEA/)
 
 ### Issue Reports
-If you find any error or suspicious bug, we will appreciate your report. Please write them in the github issues [(LINK)](https://github.com/isarnassiri/scQCEA/issues)
+If you find any error or suspicious bug, we will appreciate your report. Please write them in the GitHub issues [(LINK)](https://github.com/isarnassiri/scQCEA/issues)
 
 ### References
 1. Aibar, S., et al. SCENIC: single-cell regulatory network inference and clustering. Nature Methods 2017;14(11):1083-1086.
