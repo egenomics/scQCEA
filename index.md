@@ -158,9 +158,11 @@ We used Human Protein Atlas database (version 21.0) to generate a repository of 
 
 Summary of gene sets in the repository of reference dataset for cell-type enrichment analysis.
 
-Example of running CellTypeEnrichment function (you can find the code in `RUN_ME.R` file):
-<img src="CellTypeEnrichment.png" width="100" height="100">
+Example of running CellTypeEnrichment function (you can find the code in `RUN_ME.R` file) (Figure 9):
 
+| <img src="CellTypeEnrichment.png" width="500" height="220"> | 
+|:--:| 
+| *Figure 9. How to create an interactive QC report* |
 
 ### History
 **Release v0.1.1 (04/07/2022)**
