@@ -113,21 +113,29 @@ By default, the HTML report will be written in the /Outputs directory named `CLI
 ### Input Data
 As input, the scQCEA package expects the following data:
 
-* Metadata of samples (samples.metadata)
+* Metadata of samples (Figure 4) (samples.metadata)
 
-<img src="meta.data.png" width="600" height="200">
+| <img src="meta.data.png" width="600" height="200"> | 
+|:--:| 
+| *Figure 4. Sample Metadata file* |
 
-* Project Description (PInf.txt)
+* Project Description (Figure 5) (PInf.txt)
 
-<img src="PInf.png" width="400" height="75">
+| <img src="PInf.png" width="400" height="75"> | 
+|:--:| 
+| *Figure 5. Sample project description file* |
 
-* Output of 10X CellRanger or other single-cell experiments per pipeline (e.g. gex, ATAC, feat, etc.) [Note: you need to have at least one gene expression sample (gex)]
+* Output of 10X CellRanger or other single-cell experiments per pipeline (e.g. gex, ATAC, feat, etc.) [Note: you need to have at least one gene expression sample (gex)] (Figure 6)
 
-<img src="Inputs_0.png" width="200" height="230">
+| <img src="Inputs_0.png" width="200" height="230"> | 
+|:--:| 
+| *Figure 6. Sample input files* |
 
-* scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory
+* scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory (Figure 7)
 
-<img src="Inputs_1.png" width="250" height="370">
+| <img src="Inputs_1.png" width="250" height="370"> | 
+|:--:| 
+| *Figure 7. Sample input files in outs/ subdirectories* |
 
 Genomics sample report file including a summary of the alignment and assignment of reads to cells and genes are present in the metrics_summary.csv.
 
