@@ -170,11 +170,11 @@ GenerateInteractiveQCReport()
 
 The function applies the area under the curve and bimodal distribution to separate the distributions and evaluate the strength of enrichment of each reference cell with genes in an indicated cell. The results can be used for objective selection of insightful optimal cluster numbers and discriminate between true variation and background noise.
 
-The outpus of CellTypeEnrichment function include visualization of transcriptionally and functionally distinct clusters, highlighted by cell type group using Uniform Manifold Approximation and Projection (UMAP) and t-stochastic neighbor embedding (t-SNE) plots. In addition, it generates Heatmap plots based on cells showing the most enriched expressed genes in each cell type group, and the Barcode Rank Plot showing the distribution of non-duplicate reads with mapping quality at least 30 per barcode and which barcodes were inferred to be associated with cells (Figure 10).
+The outpus of CellTypeEnrichment function include visualization of transcriptionally and functionally distinct clusters, highlighted by cell type group using Uniform Manifold Approximation and Projection (UMAP) and t-stochastic neighbor embedding (t-SNE) plots. In addition, it generates Heatmap plots based on cells showing the most enriched expressed genes in each cell type group, and the Barcode Rank Plot showing the distribution of non-duplicate reads with mapping quality at least 30 per barcode and which barcodes were inferred to be associated with cells (Figure 9).
 
 | <img src="CellTypeEnrichment_outputs.png" width="350" height="200"> | 
 |:--:| 
-| *Figure 10. The outpus of CellTypeEnrichment function.* |
+| *Figure 9. The outpus of CellTypeEnrichment function.* |
 
 ### History
 **Release v0.1.1 (04/07/2022)**
