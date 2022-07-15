@@ -135,15 +135,14 @@ Cell type annotation on scRNA-Seq data is a pre-step for generating an interacti
 <br />
 AUCell algorithm can be applied to score the activity of each reference gene set in each cell (Aibar, et al., 2017). It uses the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The required inputs are a gene-cell count matrix (outs/read_count.csv), feature-barcode matrices (barcodes.tsv.gz, features.tsv.gz, matrix.mtx.gz) <a href="[www.something.com](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/matrices)"> (LINK) </a>, tSNE and UMAP projections from 10X CellRanger count (analysis/.../projection.csv), and a repository of reference gene sets.
 
-We used Human Protein Atlas database (version 21.0) to generate a repository of reference gene sets that are exclusively expressed in each cell type (Thul and Lindskog, 2018). The normalized expression (NX) value was used to compare genes expression between tissues and select cell type-specific marker genes from RNA single-cell profiles. The repository includes 68 reference gene sets, 2318 marker genes and is available at [https://github.com/isarnassiri/scQCEA/](https://github.com/isarnassiri/scQCEA/tree/main/Scripts/ReferenceGeneSets). The repository of reference genes covers human and mouse genes with the possibility to expand it to other species (Figure 1). 
+We used Human Protein Atlas database (version 21.0) to generate a repository of reference gene sets that are exclusively expressed in each cell type (Thul and Lindskog, 2018). The normalized expression (NX) value was used to compare genes expression between tissues and select cell type-specific marker genes from RNA single-cell profiles. The repository includes 68 reference gene sets, 2318 marker genes and is available at [https://github.com/isarnassiri/scQCEA/](https://github.com/isarnassiri/scQCEA/tree/main/Scripts/ReferenceGeneSets). The repository of reference genes covers human and mouse genes with the possibility to expand it to other species. 
 
-<img src="Supp_Figure_1.png" width="350" height="470">
+<img src="Supp_Figure_1.png" width="450" height="570">
 
 Summary of gene sets in the repository of reference dataset for cell-type enrichment analysis.
 
-
-Example of running CellTypeEnrichmentAnalysis function:
-
+Example of running CellTypeEnrichment function (you can find the code in `RUN_ME.R` file):
+<img src="CellTypeEnrichment.png" width="350" height="470">
 
 
 ### History
