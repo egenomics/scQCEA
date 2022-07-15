@@ -156,8 +156,6 @@ We used Human Protein Atlas database (version 21.0) to generate a repository of 
 |:--:| 
 | *Figure 8. Summary of gene sets in the repository of reference dataset for cell-type enrichment analysis.* |
 
-Summary of gene sets in the repository of reference dataset for cell-type enrichment analysis.
-
 Example of running CellTypeEnrichment function (you can find the code in `RUN_ME.R` file) (Figure 9):
 
 | <img src="CellTypeEnrichment.png" width="550" height="80"> | 
