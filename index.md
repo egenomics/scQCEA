@@ -174,7 +174,9 @@ The outpus of CellTypeEnrichment function include visualization of transcription
 
 | <img src="CellTypeEnrichment_outputs.png" width="350" height="200"> | 
 |:--:| 
-| *Figure 9. The outpus of CellTypeEnrichment function.* |
+| *Figure 9. The outpus of `CellTypeEnrichment` function.* |
+
+`GenerateInteractiveQCReport()` function uses these output files to generate an interactive QC report.
 
 ### History
 **Release v0.1.1 (04/07/2022)**
