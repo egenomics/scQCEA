@@ -164,7 +164,7 @@ scQCEA provides `CellTypeEnrichment()` functions, for cell-type enrichment analy
 
 The outpus of CellTypeEnrichment function include visualization of transcriptionally and functionally distinct clusters, highlighted by cell type group using Uniform Manifold Approximation and Projection (UMAP) and t-stochastic neighbor embedding (t-SNE) plots. In addition, it generates Heatmap plots based on cells showing the most enriched expressed genes in each cell type group, and the Barcode Rank Plot showing the distribution of non-duplicate reads with mapping quality at least 30 per barcode and which barcodes were inferred to be associated with cells (Figure 10).
 
-| <img src="CellTypeEnrichment_outputs.png" width="450" height="570"> | 
+| <img src="CellTypeEnrichment_outputs.png" width="350" height="200"> | 
 |:--:| 
 | *Figure 10. The outpus of CellTypeEnrichment function.* |
 
