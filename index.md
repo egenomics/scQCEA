@@ -156,11 +156,19 @@ We used Human Protein Atlas database (version 21.0) to generate a repository of 
 |:--:| 
 | *Figure 8. Summary of gene sets in the repository of reference dataset for cell-type enrichment analysis.* |
 
-scQCEA provides `CellTypeEnrichment()` functions, for cell-type enrichment analysis at the single-cell level and visulaizatin of outputs (Figure 9):
+scQCEA provides `CellTypeEnrichment()` functions, for cell-type enrichment analysis at the single-cell level and visulaizatin of outputs:
 
-| <img src="CellTypeEnrichment.png" width="550" height="80"> | 
-|:--:| 
-| *Figure 9. CellTypeEnrichment function in RUN_ME.R file for cell type enrichment analysis and visualization of results (you can find the code in `RUN_ME.R` file). The function applies the area under the curve and bimodal distribution to separate the distributions and evaluate the strength of enrichment of each reference cell with genes in an indicated cell. The results can be used for objective selection of insightful optimal cluster numbers and discriminate between true variation and background noise.* |
+
+```{r,eval=FALSE}
+
+##### Generate an "Interactive QC Report" #####
+setwd("~/"); setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Scripts/')); 
+source("GenerateInteractiveQCReport.R")
+GenerateInteractiveQCReport()
+
+``` 
+
+The function applies the area under the curve and bimodal distribution to separate the distributions and evaluate the strength of enrichment of each reference cell with genes in an indicated cell. The results can be used for objective selection of insightful optimal cluster numbers and discriminate between true variation and background noise.
 
 The outpus of CellTypeEnrichment function include visualization of transcriptionally and functionally distinct clusters, highlighted by cell type group using Uniform Manifold Approximation and Projection (UMAP) and t-stochastic neighbor embedding (t-SNE) plots. In addition, it generates Heatmap plots based on cells showing the most enriched expressed genes in each cell type group, and the Barcode Rank Plot showing the distribution of non-duplicate reads with mapping quality at least 30 per barcode and which barcodes were inferred to be associated with cells (Figure 10).
 
