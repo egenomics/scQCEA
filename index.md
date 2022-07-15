@@ -156,7 +156,7 @@ We used Human Protein Atlas database (version 21.0) to generate a repository of 
 |:--:| 
 | *Figure 8. Summary of gene sets in the repository of reference dataset for cell-type enrichment analysis.* |
 
-You can perform the whole procefure of cell-type enrichment analysis and visulaizatin of outputs using CellTypeEnrichment function (you can find the code in `RUN_ME.R` file) (Figure 9):
+scQCEA provides `CellTypeEnrichment()` functions, for cell-type enrichment analysis at the single-cell level and visulaizatin of outputs (you can find the code in `RUN_ME.R` file) (Figure 9):
 
 | <img src="CellTypeEnrichment.png" width="550" height="80"> | 
 |:--:| 
