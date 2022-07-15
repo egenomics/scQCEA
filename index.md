@@ -93,9 +93,11 @@ We only tested scQCEA in the R version 4.1.3 (2022-03-10) environment. You need 
 Alternatively, you can download the source codes and install libraries using the terminal.
 
 ### Manual
-It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, select all scripts including `GenerateInteractiveQCReport()` function, and click on the "Run" button at the top right of the Source tab.
+It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, select all scripts including `GenerateInteractiveQCReport()` function, and click on the "Run" button at the top right of the Source tab (Figure 2).
 
-<img src="RunME.png" width="500" height="220">
+| <img src="RunME.png" width="500" height="220"> | 
+|:--:| 
+| *Figure 2. How to create an interactive QC report* |
 
 An interactive QC report automatically will be generated in one HTML file, including four sections: experimental workflow, data processing workflow, sample information and QC metrics, data analysis and quality control (Fig. 2).
 
