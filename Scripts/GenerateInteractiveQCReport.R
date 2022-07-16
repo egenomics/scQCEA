@@ -39,6 +39,9 @@ GenerateInteractiveQCReport <- function(){
   listfiles = list.files(pattern = 'read_count.csv', recursive = T)
   invisible(unlink(listfiles, recursive = T, force = T));
   
+  listfiles = list.files(pattern = '*.pdf', recursive = T)
+  invisible(unlink(listfiles, recursive = T, force = T));
+  
   #--- generate zip file
   setwd(dirname(rstudioapi::getActiveDocumentContext()$path));
   PInf = fread('Inputs/PInf.txt', stringsAsFactors = F, header = F);
