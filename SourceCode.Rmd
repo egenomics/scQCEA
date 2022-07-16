@@ -2,7 +2,7 @@
 ```{r, include=FALSE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 
-list.of.packages <- c("dplyr", "kableExtra", "DT", "downloadthis", "ggplot2", "data.table",  "stringr", "SciencesPo", "R.utils", "readr", "rmarkdown", "devtools", "DiagrammeR", "Rtools")
+list.of.packages <- c("dplyr", "kableExtra", "DT", "downloadthis", "ggplot2", "data.table",  "stringr", "SciencesPo", "R.utils", "readr", "rmarkdown", "devtools", "DiagrammeR")
 
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, repos = "http://cran.us.r-project.org", update = FALSE, dependencies = T)
@@ -25,7 +25,6 @@ library(dplyr, quietly = TRUE)
 library(readr, quietly = TRUE)
 library(rmarkdown, quietly = TRUE)
 library(R.utils, quietly = TRUE)
-library(Rtools, quietly = TRUE)
 options(knitr.table.format = "latex")
 
 # Getting the path of your current open file
