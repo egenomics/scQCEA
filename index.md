@@ -6,9 +6,10 @@ This documentation gives an introduction and usage manual of scQCEA (acronym of 
 The easiest way to generate an interactive summary QC report is to run the `RUN_ME.R` script from the RStudio. The required inputs are a gene-cell count matrix, feature-barcode matrices, and tSNE and UMAP projections from 10X CellRanger count.
 
 ### Easy Installation
-1. Install the R [(LINK)](https://cran.r-project.org/), and Rtools if you use Windows OS [(LINK)](https://cran.r-project.org/bin/windows/Rtools/)
-2. Install the free version of rStudio [(LINK)](https://www.rstudio.com/products/rstudio/download/)
-3. Download scQCEA from GitHub (Figure 1) [(LINK)](https://github.com/isarnassiri/scQCEA/), and unzip the folder
+1. Install the R [(LINK)](https://cran.r-project.org/)
+2. Install the Rtools if you use Windows OS [(LINK)](https://cran.r-project.org/bin/windows/Rtools/)
+3. Install the free version of rStudio [(LINK)](https://www.rstudio.com/products/rstudio/download/)
+4. Download scQCEA from GitHub (Figure 1) [(LINK)](https://github.com/isarnassiri/scQCEA/), and unzip the folder
 
 | ![Figure 1](/Download_Github.png) | 
 |:--:| 
