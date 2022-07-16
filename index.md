@@ -8,7 +8,7 @@ scQCEA is an R package for annotation and quality control report of scRNA-Seq pr
 The easiest way to generate an interactive summary QC report is to run the `RUN_ME.R` script from the RStudio. The required inputs are a gene-cell count matrix, feature-barcode matrices, and tSNE and UMAP projections from 10X CellRanger count.
 
 ### Easy Installation
-1. Install the R [(LINK)](https://cran.r-project.org/)
+1. Install the R [(LINK)](https://cran.r-project.org/), and Rtools if you use Windows OS [(LINK)](https://cran.r-project.org/bin/windows/Rtools/)
 2. Install the free version of rStudio [(LINK)](https://www.rstudio.com/products/rstudio/download/)
 3. Download scQCEA from GitHub (Figure 1) [(LINK)](https://github.com/isarnassiri/scQCEA/), and unzip the folder
 
