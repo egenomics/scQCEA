@@ -3,23 +3,23 @@ CellTypeEnrichment <- function(){
   # Install and load R packages
   list.of.packages <- c( 'pdftools', 'png', "BiocManager", "Matrix", "data.table", "rstudioapi", "DT", "NMF", "plotly", "stringr", "dplyr", "BiocManager")
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-  if(length(new.packages)) install.packages(new.packages, repos = "http://cran.us.r-project.org")
-  
+  if(length(new.packages)) install.packages(new.packages, repos = "http://cran.us.r-project.org", update = FALSE, dependencies = T)
+
   list.of.packages <- c("AUCell" )
   AUCell.R <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-  if(length(AUCell.R)){BiocManager::install("AUCell")}
+  if(length(AUCell.R)){BiocManager::install("AUCell", update = FALSE, dependencies = T)}
   
   list.of.packages <- c( "GSEABase" )
   GSEABase.R <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-  if(length(GSEABase.R)){BiocManager::install("GSEABase")}
+  if(length(GSEABase.R)){BiocManager::install("GSEABase", update = FALSE, dependencies = T)}
   
   list.of.packages <- c( "GEOquery")
   GEOquery.R <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-  if(length(GEOquery.R)){BiocManager::install("GEOquery")}
+  if(length(GEOquery.R)){BiocManager::install("GEOquery", update = FALSE, dependencies = T)}
   
   list.of.packages <- c( "DropletUtils")
   DropletUtils.R <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-  if(length(DropletUtils.R)){BiocManager::install("DropletUtils")}
+  if(length(DropletUtils.R)){BiocManager::install("DropletUtils", update = FALSE, dependencies = T)}
   
   suppressPackageStartupMessages({
     library(png); library(pdftools); library(BiocManager); library(DropletUtils); library(Matrix); library(data.table, quietly = TRUE); library(rstudioapi, quietly = TRUE); library(DT, quietly = TRUE); library(NMF, quietly = TRUE); library(plotly, quietly = TRUE); library(stringr, quietly = TRUE); library(dplyr, quietly = TRUE); require("BiocManager", quietly = TRUE); library(AUCell); library(GSEABase); library(GEOquery)
