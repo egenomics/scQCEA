@@ -161,10 +161,10 @@ scQCEA provides `CellTypeEnrichment()` functions, for cell-type enrichment analy
 
 ```{r,eval=FALSE}
 
-##### Generate an "Interactive QC Report" #####
+##### Cell Type Enrichment Analysis #####
 setwd("~/"); setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Scripts/')); 
-source("GenerateInteractiveQCReport.R")
-GenerateInteractiveQCReport()
+source("CellTypeEnrichment.R")
+CellTypeEnrichment()
 
 ``` 
 
