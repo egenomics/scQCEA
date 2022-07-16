@@ -10,7 +10,7 @@ scQCEA
 
 scQCEA is an R package for annotation and quality control report of scRNA-Seq profiles, which performs a probabilistic assignment of the reference cell types to identify clusters, before downstream analysis such as gene network inference. scQCEA provides automated cell type annotation on scRNA-seq data and identifies differential patterns in gene expression. scQCEA generates an interactive report of quality control metrics which allows visual evaluation of QC metrics, objective selection of insightful optimal cluster numbers and discrimination between true variation and background noise. 
 
-Please see the [`manual`](https://isarnassiri.github.io/scQCEA/) for the usage of scQCEA and the explanation of the HTML report.
+Please see the [`manual`](https://isarnassiri.github.io/scQCEA/) for the usage of scQCEA including the explanations of the HTML report and how to prepare data input files.
 
 <a name="installation"/>
 
@@ -19,8 +19,6 @@ Please see the [`manual`](https://isarnassiri.github.io/scQCEA/) for the usage o
 2. Install the free version of rStudio [(LINK)](https://www.rstudio.com/products/rstudio/download/)
 3. Download scQCEA from GitHub [(LINK)](https://github.com/isarnassiri/scQCEA/), and unzip the folder
 4. To install scQCEA, run the `RUN_ME.R` script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories.
-
-It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, select all scripts incluidng `GenerateInteractiveQCReport()` function, and click on the "Run" button at the top right of the Source tab.
 
 ```{r,eval=FALSE}
 
