@@ -138,7 +138,7 @@ As input, the scQCEA package expects the following data:
 
 Genomics sample report file including a summary of the alignment and assignment of reads to cells and genes are present in the metrics_summary.csv.
 
-Raw count data from 10X CellRanger (outs/read_count.csv) or other single-cell experiments has the gene as a row (the gene name should be the human or mouse Ensembl gene ID) and the cell as a column. You can convert an HDF5 Feature-Barcode Matrix to a gene-cell count matrix using the cellranger mat2csv command provided by 10Xgenomics.  
+Raw count data from 10X CellRanger (outs/read_count.csv) or other single-cell experiments has the gene as a row (the gene name should be the human or mouse Ensembl gene ID) and the cell as a column. You can convert an HDF5 Feature-Barcode Matrix to a gene-cell count matrix using the cellranger mat2csv [(LINK)](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/matrices) command provided by 10Xgenomics.  
 
 The tSNE and UMAP projections are the outputs of dimensionality reduction analysis in CSV format (projection.csv).
 
@@ -147,7 +147,7 @@ Cell type annotation on scRNA-Seq data is a pre-step for generating an interacti
 
 **Recommended strategy for cell-type enrichment analysis:**
 <br />
-AUCell algorithm can be applied to score the activity of each reference gene set in each cell (Aibar, et al., 2017). It uses the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The required inputs are a gene-cell count matrix (outs/read_count.csv), feature-barcode matrices (barcodes.tsv.gz, features.tsv.gz, matrix.mtx.gz) <a href="[www.something.com](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/matrices)"> (LINK) </a>, tSNE and UMAP projections from 10X CellRanger count (analysis/.../projection.csv), and a repository of reference gene sets.
+AUCell algorithm can be applied to score the activity of each reference gene set in each cell (Aibar, et al., 2017). It uses the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The required inputs are a gene-cell count matrix (outs/read_count.csv), feature-barcode matrices (barcodes.tsv.gz, features.tsv.gz, matrix.mtx.gz) [(LINK](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/matrices), tSNE and UMAP projections from 10X CellRanger count (analysis/.../projection.csv), and a repository of reference gene sets.
 
 We used Human Protein Atlas database (version 21.0) to generate a repository of reference gene sets that are exclusively expressed in each cell type (Thul and Lindskog, 2018). The normalized expression (NX) value was used to compare gene expression between tissues and select cell type-specific marker genes from RNA single-cell profiles. The repository includes 68 reference gene sets, and 2318 marker genes and is available at [https://github.com/isarnassiri/scQCEA/](https://github.com/isarnassiri/scQCEA/tree/main/Scripts/ReferenceGeneSets). The repository of reference genes covers human and mouse genes with the possibility to expand it to other species (Figure 8). 
 
