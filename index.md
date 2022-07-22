@@ -143,17 +143,10 @@ Raw count data from 10X CellRanger (outs/read_count.csv) or other single-cell ex
 The tSNE and UMAP projections are the outputs of dimensionality reduction analysis in CSV format (projection.csv) [(LINK)](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/algorithms/overview).
 
 ### Cell Type Enrichment Analysis
-Cell type annotation on scRNA-Seq data is a pre-step for generating an interactive QC report with scQCEA. This step requires some bioinformatics efforts, but there are a few good existing software to use.
+Cell type annotation on scRNA-Seq data is a pre-step for generating an interactive QC report with scQCEA. This step requires some bioinformatics efforts, but scQCEA provides a function that comprises all the intermediate steps including visualization.
 
 **Recommended strategy for cell-type enrichment analysis:**
 <br />
-AUCell algorithm can be applied to score the activity of each reference gene set in each cell (Aibar, et al., 2017). It uses the area under the curve (AUC) to quantify the enrichment of an indicated reference gene set among the most highly expressed genes in each cell. The required inputs are a gene-cell count matrix (outs/read_count.csv), feature-barcode matrices (barcodes.tsv.gz, features.tsv.gz, matrix.mtx.gz) [(LINK)](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/matrices), tSNE and UMAP projections from 10X CellRanger count (analysis/.../projection.csv), and a repository of reference gene sets.
-
-We used Human Protein Atlas database (version 21.0) to generate a repository of reference gene sets that are exclusively expressed in each cell type (Thul and Lindskog, 2018). The normalized expression (NX) value was used to compare gene expression between tissues and select cell type-specific marker genes from RNA single-cell profiles. The repository includes 68 reference gene sets, and 2318 marker genes and is available at [https://github.com/isarnassiri/scQCEA/](https://github.com/isarnassiri/scQCEA/tree/main/Scripts/ReferenceGeneSets). The repository of reference genes covers human and mouse genes with the possibility to expand it to other species (Figure 8). 
-
-| <img src="Supp_Figure_1.png" width="450" height="570"> | 
-|:--:| 
-| *Figure 8. Summary of gene sets in the repository of reference dataset for cell-type enrichment analysis.* |
 
 scQCEA provides `CellTypeEnrichment()` functions, for cell-type enrichment analysis at the single-cell level and visulaizatin of outputs (you can find the code in `RUN_ME.R` file):
 
@@ -167,15 +160,23 @@ CellTypeEnrichment()
 
 ``` 
 
-The function applies the area under the curve and bimodal distribution to separate the distributions and evaluate the strength of enrichment of each reference cell with genes in an indicated cell. The results can be used for objective selection of insightful optimal cluster numbers and discriminate between true variation and background noise.
-
-The outpus of CellTypeEnrichment function include visualization of transcriptionally and functionally distinct clusters, highlighted by cell type group using Uniform Manifold Approximation and Projection (UMAP) and t-stochastic neighbor embedding (t-SNE) plots. In addition, it generates Heatmap plots based on cells showing the most enriched expressed genes in each cell type group, and the Barcode Rank Plot showing the distribution of non-duplicate reads with mapping quality at least 30 per barcode and which barcodes were inferred to be associated with cells (Figure 9).
+The function applies the area under the curve and bimodal distribution to separate the distributions and evaluate the strength of enrichment of each reference cell with genes in an indicated cell (Aibar, et al., 2017). The outpus of `CellTypeEnrichment` function include visualization of transcriptionally and functionally distinct clusters, highlighted by cell type group using Uniform Manifold Approximation and Projection (UMAP) and t-stochastic neighbor embedding (t-SNE) plots. In addition, it generates Heatmap plots based on cells showing the most enriched expressed genes in each cell type group, and the Barcode Rank Plot showing the distribution of non-duplicate reads with mapping quality at least 30 per barcode and which barcodes were inferred to be associated with cells (Figure 9). The results can be used for objective selection of insightful optimal cluster numbers and discriminate between true variation and background noise.
 
 | <img src="CellTypeEnrichment_outputs.png" width="350" height="200"> | 
 |:--:| 
 | *Figure 9. The outpus of CellTypeEnrichment function.* |
 
 `GenerateInteractiveQCReport()` function uses these output files and generates an interactive QC report for multiple samples to compare and examine biases and outliers over biological and technical measures.
+
+**Inputs for cell-type enrichment analysis:**
+
+The required inputs are a gene-cell count matrix (outs/read_count.csv), feature-barcode matrices (barcodes.tsv.gz, features.tsv.gz, matrix.mtx.gz) [(LINK)](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/matrices), tSNE and UMAP projections from 10X CellRanger count (analysis/.../projection.csv) [(LINK)](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/analysis), and a repository of reference gene sets.
+
+We used Human Protein Atlas database (version 21.0) to generate a repository of reference gene sets that are exclusively expressed in each cell type [(LINK)](https://www.proteinatlas.org/). The normalized expression (NX) value was used to compare gene expression between tissues and select cell type-specific marker genes from RNA single-cell profiles. The repository includes 68 reference gene sets, and 2318 marker genes and is available at [https://github.com/isarnassiri/scQCEA/](https://github.com/isarnassiri/scQCEA/tree/main/Scripts/ReferenceGeneSets). The repository of reference genes covers human and mouse genes with the possibility to expand it to other species (Figure 8). 
+
+| <img src="Supp_Figure_1.png" width="450" height="570"> | 
+|:--:| 
+| *Figure 8. Summary of gene sets in the repository of reference dataset for cell-type enrichment analysis.* |
 
 ### History
 **Release v0.1.1 (04/07/2022)**
