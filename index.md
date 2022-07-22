@@ -130,7 +130,7 @@ As input, the scQCEA package expects the following data:
 |:--:| 
 | *Figure 6. Sample input files* |
 
-* scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory (Figure 7)
+* scQCEA expects the following files in the outs/ subdirectory within each pipeline output directory:
 
 | <img src="Inputs_1.png" width="250" height="370"> | 
 |:--:| 
@@ -170,7 +170,7 @@ The function applies the area under the curve and bimodal distribution to separa
 
 **Inputs for cell-type enrichment analysis:**
 
-The required inputs are a gene-cell count matrix (outs/read_count.csv), feature-barcode matrices (barcodes.tsv.gz, features.tsv.gz, matrix.mtx.gz) [(LINK)](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/matrices), tSNE and UMAP projections from 10X CellRanger count (analysis/.../projection.csv) [(LINK)](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/analysis), and a repository of reference gene sets.
+The required inputs are a gene-cell count matrix (outs/read_count.csv), feature-barcode matrices (barcodes.tsv.gz, features.tsv.gz, matrix.mtx.gz) [(LINK)](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/matrices), tSNE and UMAP projections from 10X CellRanger count (analysis/.../projection.csv) [(LINK)](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/output/analysis), and a repository of reference gene sets (Figure 7).
 
 We used Human Protein Atlas database (version 21.0) to generate a repository of reference gene sets that are exclusively expressed in each cell type [(LINK)](https://www.proteinatlas.org/). The normalized expression (NX) value was used to compare gene expression between tissues and select cell type-specific marker genes from RNA single-cell profiles. The repository includes 68 reference gene sets, and 2318 marker genes and is available at [https://github.com/isarnassiri/scQCEA/](https://github.com/isarnassiri/scQCEA/tree/main/Scripts/ReferenceGeneSets). The repository of reference genes covers human and mouse genes with the possibility to expand it to other species (Figure 9). 
 
