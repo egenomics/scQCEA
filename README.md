@@ -20,6 +20,10 @@ Please see the [`manual`](https://isarnassiri.github.io/scQCEA/) for the usage o
 3. Download scQCEA from GitHub [(LINK)](https://github.com/isarnassiri/scQCEA/), and unzip the folder
 4. To install scQCEA, run the `RUN_ME.R` script from the RStudio. All dependency packages automatically will be downloaded, installed and loaded from CRAN-like repositories.
 
+### Usage
+
+It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, select all scripts incluidng `GenerateInteractiveQCReport()` function, and click on the "Run" button at the top right of the Source tab. An interactive QC report automatically will be generated in one HTML file, including four sections: experimental workflow, data processing workflow, sample information and QC metrics, data analysis and quality control.
+
 ```{r,eval=FALSE}
 
 #########################################################################
@@ -28,14 +32,6 @@ Please see the [`manual`](https://isarnassiri.github.io/scQCEA/) for the usage o
 
 ##### Install and load R packages #####
 if(!("rstudioapi" %in% installed.packages()[,"Package"])) install.packages("rstudioapi", repos = "http://cran.us.r-project.org"); library("rstudioapi")
-
-```
-
-### Usage
-
-It is easy to create an interactive QC report for those who possess little or no programming language skills. To run and generate an interactive QC report on your computer please open the `RUN_ME.R` file using rStudio, select all scripts incluidng `GenerateInteractiveQCReport()` function, and click on the "Run" button at the top right of the Source tab. An interactive QC report automatically will be generated in one HTML file, including four sections: experimental workflow, data processing workflow, sample information and QC metrics, data analysis and quality control.
-
-```{r,eval=FALSE}
 
 ##### Generate an "Interactive QC Report" #####
 setwd("~/"); setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Scripts/')); 
