@@ -148,7 +148,7 @@ Cell type annotation on scRNA-Seq data is a pre-step for generating an interacti
 **Recommended strategy for cell-type enrichment analysis:**
 <br />
 
-scQCEA provides `CellTypeEnrichment()` functions, for cell-type enrichment analysis at the single-cell level and visulaizatin of outputs (you can find the code in `RUN_ME.R` file):
+scQCEA provides `CellTypeEnrichment()` functions for cell-type enrichment analysis at the single-cell level and visualization of outputs (you can find the code in `RUN_ME.R` file):
 
 
 ```{r,eval=FALSE}
