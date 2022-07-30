@@ -1,4 +1,4 @@
-# scQCEA
+# Example of Application scQCEA
 To demonstrate the utility of scQCEA, we apply the workflow to the sixteen gene expression profiles of eight patients with metastatic melanoma, prepared from pre- and post-treatment experimental batches (Fairfax, et al., 2020). 
 
 Download and unzip the `OGC_Interactive_QC_Report_ P180121.zip` file. You can open `CLICK_ME.html` file without using rStudio/R.
