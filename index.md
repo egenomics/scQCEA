@@ -98,7 +98,7 @@ It is easy to create an interactive QC report for those who possess little or no
 |:--:| 
 | *Figure 2. How to create an interactive QC report* |
 
-An interactive QC report automatically will be generated in one HTML file, including four sections: experimental workflow, data processing workflow, sample information and QC metrics, data analysis and quality control (Figure 3).
+An interactive QC report automatically will be generated in one HTML file in the "Outputs/" folder, including four sections: experimental workflow, data processing workflow, sample information and QC metrics, data analysis and quality control (Figure 3).
 
 | <img src="Figure_1.png" width="800" height="360"> | 
 |:--:| 
