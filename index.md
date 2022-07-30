@@ -178,7 +178,7 @@ We used Human Protein Atlas database (version 21.0) to generate a repository of 
 |:--:| 
 | *Figure 9. Summary of gene sets in the repository of reference dataset for cell-type enrichment analysis.* |
 
-**Example of Application scQCEA
+### Example of Application scQCEA
 
 To demonstrate the utility of scQCEA, we apply the workflow to the sixteen gene expression profiles of eight patients with metastatic melanoma, prepared from pre- and post-treatment experimental batches (Fairfax, et al., 2020). 
 
