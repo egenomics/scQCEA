@@ -148,7 +148,7 @@ Cell type annotation on scRNA-Seq data is a pre-step for generating an interacti
 **Recommended strategy for cell-type enrichment analysis:**
 <br />
 
-scQCEA provides `CellTypeEnrichment()` functions for cell-type enrichment analysis at the single-cell level and visualization of outputs (you can find the code in `RUN_ME.R` file):
+scQCEA provides `CellTypeEnrichment()` function for cell-type enrichment analysis at the single-cell level and visualization of outputs (you can find the code in `RUN_ME.R` file):
 
 
 ```{r,eval=FALSE}
@@ -160,7 +160,7 @@ CellTypeEnrichment()
 
 ``` 
 
-The function applies the area under the curve and bimodal distribution to separate the distributions and evaluate the strength of enrichment of each reference cell with genes in an indicated cell (Aibar, et al., 2017). The outputs of `CellTypeEnrichment` function include visualization of transcriptionally and functionally distinct clusters, highlighted by cell type group using Uniform Manifold Approximation and Projection (UMAP) and t-stochastic neighbor embedding (t-SNE) plots. In addition, it generates Heatmap plots based on cells showing the most enriched expressed genes in each cell type group, and the Barcode Rank Plot showing the distribution of non-duplicate reads with mapping quality at least 30 per barcode and which barcodes were inferred to be associated with cells (Figure 8). The results can be used for objective selection of insightful optimal cluster numbers and discriminate between true variation and background noise.
+The function applies the area under the curve and bimodal distribution to separate the distributions and evaluate the strength of enrichment of each reference cell with genes in an indicated cell (Aibar, et al., 2017). The outputs of `CellTypeEnrichment` function include visualization of transcriptionally and functionally distinct clusters, highlighted by cell type group using Uniform Manifold Approximation and Projection (UMAP) and t-stochastic neighbor embedding (t-SNE) plots. In addition, it generates Heatmap plots based on cells showing the most enriched expressed genes in each cell type group, and the Barcode Rank Plot showing the distribution of non-duplicate reads with mapping quality at least 30 per barcode and which barcodes were inferred to be associated with cells (Figure 8). The results can be used for objective selection of insightful optimal cluster numbers and discriminate between true variation and background noise. For data sets including multiple samples, you can batch submit of serial enrichment analysis for parallel execution in a High Performance Computing (HPC) system.
 
 | <img src="CellTypeEnrichment_outputs.png" width="350" height="200"> | 
 |:--:| 
