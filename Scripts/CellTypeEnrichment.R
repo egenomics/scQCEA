@@ -1,7 +1,7 @@
 CellTypeEnrichment <- function(){
   
   # Install and load R packages
-  list.of.packages <- c( 'pdftools', 'png', "BiocManager", "Matrix", "data.table", "rstudioapi", "DT", "NMF", "plotly", "stringr", "dplyr", "BiocManager")
+  list.of.packages <- c("devtools", "pdftools", 'png', "BiocManager", "Matrix", "data.table", "rstudioapi", "DT", "NMF", "plotly", "stringr", "dplyr", "BiocManager")
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) install.packages(new.packages, repos = "http://cran.us.r-project.org", update = FALSE, dependencies = T)
 
@@ -22,11 +22,9 @@ CellTypeEnrichment <- function(){
   if(length(DropletUtils.R)){BiocManager::install("DropletUtils", update = FALSE, dependencies = T)}
   
   suppressPackageStartupMessages({
-    library(png); library(pdftools); library(BiocManager); library(DropletUtils); library(Matrix); library(data.table, quietly = TRUE); library(rstudioapi, quietly = TRUE); library(DT, quietly = TRUE); library(NMF, quietly = TRUE); library(plotly, quietly = TRUE); library(stringr, quietly = TRUE); library(dplyr, quietly = TRUE); require("BiocManager", quietly = TRUE); library(AUCell); library(GSEABase); library(GEOquery)
+    library(devtools, quietly = TRUE); library(png, quietly = TRUE); library(pdftools, quietly = TRUE); library(BiocManager, quietly = TRUE); library(DropletUtils, quietly = TRUE); library(Matrix, quietly = TRUE); library(data.table, quietly = TRUE); library(rstudioapi, quietly = TRUE); library(DT, quietly = TRUE); library(NMF, quietly = TRUE); library(plotly, quietly = TRUE); library(stringr, quietly = TRUE); library(dplyr, quietly = TRUE); require(BiocManager, quietly = TRUE); library(AUCell, quietly = TRUE); library(GSEABase, quietly = TRUE); library(GEOquery, quietly = TRUE)
   })
-  
-  # getActiveDocumentContext shows the location of RNN_ME
-  # setwd("/Users/isar/Downloads/scQCEA/Inputs")
+
   setwd("~/"); setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Inputs/'));
   SamplesMetadata = fread('samples.metadata', stringsAsFactors = F, header = T)
   
