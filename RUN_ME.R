@@ -3,7 +3,7 @@
 #########################################################################
 
 ##### Install and load R packages #####
-if(!("rstudioapi" %in% installed.packages()[,"Package"])) install.packages("rstudioapi", repos = "http://cran.us.r-project.org", update = FALSE); library("rstudioapi")
+if(length(c("devtools", "rstudioapi")[!(c("devtools", "rstudioapi") %in% installed.packages()[,"Package"])])) install.packages(c("devtools", "rstudioapi")[!(c("devtools", "rstudioapi") %in% installed.packages()[,"Package"])], repos = "http://cran.us.r-project.org", update = FALSE, dependencies = T); library("devtools"); library("rstudioapi");
 
 ##### Generate an "Interactive QC Report" #####
 setwd("~/"); setwd(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), '/Scripts/')); 
