@@ -471,6 +471,11 @@ table_All$index = paste(table_All$HTO_ID, table_All$Sample.ID, sep = '_')
 
 indices = unique(table_All$index)
 
+if(length(which(table_All$HTO_ID == 'Negative'))> 0)
+{
+  table_All = table_All[-which(table_All$HTO_ID == 'Negative'),]
+}
+
 table_All <- transform(table_All,                             # Calculate percentage by group
                        Cells_Percentage = ave(HTO_classification_count,
                                   index,
@@ -481,6 +486,12 @@ table_All = table_All[,-which(colnames(table_All) %in% c("index"))]
 table_All = table_All[,c('HTO_ID','HTO_classification','HTO_classification_count','Cells_Percentage','Sample.ID','LIMS.ID','nCount_RNA','nFeature_RNA','nCount_ADT','nFeature_ADT','nCount_HTO','nFeature_HTO')]
 
 table_All$Cells_Percentage = round(table_All$Cells_Percentage, 4)*100
+
+
+if(length(which(is.na(table_All$HTO_ID)))>0)
+{
+table_All = table_All[-which(is.na(table_All$HTO_ID)),]  
+}
 
 row.names(table_All) = 1:dim(table_All)[1]
 
